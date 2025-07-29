@@ -8,8 +8,6 @@ default persistent.coll7_unlocked = False
 default persistent.coll8_unlocked = False
 default persistent.coll9_unlocked = False
 
-image im_coll1_tablerki = im.zoom("coll1_tablerki.jpg", zoom 0.5)        
-image im_coll2_note = im.zoom("coll2_note.jpg", zoom 0.5)
 
 init python:
     
@@ -71,31 +69,6 @@ screen album:
     tag menu
     add "p.png"
     
-#    image im_coll3_ :
-#        "coll3_.jpg"
-#        zoom 0.1
-#
-#   image im_coll4_niz:
-#        "coll4_niz.jpg"
-#        zoom 0.1
-#    image im_coll5_kvitka :
-#        "coll5_kvitka.jpg"
-#        zoom 0.1
-#    image im_coll6_mirror :
-#        "coll6_mirror.jpg"
-#        zoom 0.1
-#    image im_coll7_ochki:
-#        "coll7_ochki.jpg"
-#        zoom 0.1
-#    image im_coll8_kartinka :
-#        "coll8_картинка.jpg"
-#        zoom 0.1
-#    image im_coll9_telephon :
-#        "coll9_telephon.jpg"
-#        zoom 0.1
-#    image im_locked1 :
-#        "locked"
-#        zoom 0.1
 
     frame:
         xalign 0.3
