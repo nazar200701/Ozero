@@ -311,12 +311,13 @@ screen navigation():
 
         textbutton _("Preferences") action ShowMenu("preferences")
 
-        if _in_replay:
+        if renpy.get_screen("main_menu"):
+            textbutton _("Album") action ShowMenu("album")
 
+        if _in_replay:
             textbutton _("End Replay") action EndReplay(confirm=True)
 
         elif not main_menu:
-
             textbutton _("Main Menu") action MainMenu()
 
         textbutton _("About") action ShowMenu("about")

@@ -1,16 +1,17 @@
-﻿# The script of the game goes in this file.
+﻿# $ persistent.pink_unlocked = True
 
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
+define gg = Character("людина")
+
+define Ukralke = Character("русалка")
+
+image bg_ozero_night = "ozero_night.png"
+image bg_ozero_day = "ozero_day.png"
+image bg_forest_day = "forest_day.png"
+image bg_forest_night = "forest_night.png"
+image bg_water_day = "water_day.png"
+image bg_water_night = "water_night.png"
 
 
-define gg = Character("Лесбійка-людина")
-
-define Ukralke = Character("Лесбійка-русалка")
-
-image bg0 = "Балванка0.jpg"
-image bg1 = "ОзероДнівне1.jpg"
-image bg2 = "ОзероНічне2.jpg"
 
 label start:
 
@@ -74,11 +75,21 @@ label start:
     #"(пауза)"
     Ukralke "ПОЛИН чи петрушка?!"
 
+#    $ persistent.1_unlocked = True
+#    $ persistent.2_unlocked = True
+#    $ persistent.3_unlocked = True
+#    $ persistent.4_unlocked = True
+#    $ persistent.5_unlocked = True
+#    $ persistent.6_unlocked = True
+#    $ persistent.7_unlocked = True
+#    $ persistent.8_unlocked = True
+#    $ persistent.9_unlocked = True
     menu:
         "Полин":
             jump polyn
         "Петрушка":
             jump Petrushka
+
 # перший вибір
 label polyn:
     "Молодець"
