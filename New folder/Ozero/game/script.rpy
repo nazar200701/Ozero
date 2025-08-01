@@ -17,6 +17,7 @@ label start:
 
     scene bg2
     show bg2
+    $ persistent.coll3_unlocked = True
 
     play music "1.mp3"
 

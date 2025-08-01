@@ -1,16 +1,4 @@
-default persistent.coll1_unlocked = False
-default persistent.coll2_unlocked = False
-default persistent.coll3_unlocked = False
-default persistent.coll4_unlocked = False
-default persistent.coll5_unlocked = False
-default persistent.coll6_unlocked = False
-default persistent.coll7_unlocked = False
-default persistent.coll8_unlocked = False
-default persistent.coll9_unlocked = False
-
-
 init python:
-    
 
     gallery = Gallery()
 
@@ -27,25 +15,23 @@ init python:
     
 
     # --- Налаштування Зображення 3 ---
-    gallery.button("godidnik")
-    gallery.image("coll3_godidnik") # Перейменовано з "coll3_" для ясності
+    gallery.button("godinik")
+    gallery.image("images/collectibles/coll3_godinik.jpg") # Перейменовано з "coll3_" для ясності
+    "ffd"
     gallery.condition("persistent.coll3_unlocked")
 
     # --- Налаштування Зображення 4 ---
     gallery.button("niz")
     gallery.image("coll4_niz")
     gallery.condition("persistent.coll4_unlocked")
-
     # --- Налаштування Зображення 5 ---
     gallery.button("kvitka")
     gallery.image("coll5_kvitka")
-
     gallery.condition("persistent.coll5_unlocked")
 
     # --- Налаштування Зображення 6 ---
     gallery.button("mirror")
     gallery.image("coll6_mirror")
-
     gallery.condition("persistent.coll6_unlocked")
 
     # --- Налаштування Зображення 7 ---
@@ -67,24 +53,25 @@ init python:
 
 screen album:
     tag menu
-    add "p.png"
+    add "p.jpg"
     
 
     frame:
-        xalign 0.3
-        yalign 0.5
+
         background None
         grid 3 3:
+            xalign 0.5
+            yalign 0.5
 
-            add gallery.make_button(name="tabletki",image=im_coll1_tablerki, locked=im_locked1)
-            add gallery.make_button(name="note",image=im_coll2_note, locked=im_locked1)
-            #add gallery.make_button(name="godidnik",image=im_coll3_, locked=im_locked1)
-            #add gallery.make_button(name="niz",image=im_coll4_niz, locked=im_locked1)
-            #add gallery.make_button(name="kvitka",image=im_coll5_kvitka, locked=im_locked1)
-            #add gallery.make_button(name="mirror",image=im_coll6_mirror, locked=im_locked1)
-            #add gallery.make_button(name="ochki",image=im_coll7_ochki, locked=im_locked1)
-            #add gallery.make_button(name="kartinka",image=im_coll8_kartinka,locked=im_locked1)
-            #add gallery.make_button(name="telephon",image= im_coll9_telephon, locked=im_locked1)
+            add gallery.make_button(name="tabletki",unlocked = "images/collectibles/small/Illustration106 (5).png",locked="images/collectibles/locked.jpg")
+            add gallery.make_button(name="note",unlocked = "images/collectibles/small/Illustration106.png",locked="images/collectibles/locked.jpg")
+            add gallery.make_button(name="godinik",unlocked = "images/collectibles/small/Illustration106 (7).png",locked="images/collectibles/locked.jpg")
+            add gallery.make_button(name="niz",unlocked = "images/collectibles/small/Illustration106 (8).png",locked="images/collectibles/locked.jpg")
+            add gallery.make_button(name="kvitka",unlocked = "images/collectibles/small/Illustration106 (1).png",locked="images/collectibles/locked.jpg")
+            add gallery.make_button(name="mirror",unlocked = "images/collectibles/small/Illustration106 (2).png",locked="images/collectibles/locked.jpg")
+            add gallery.make_button(name="ochki",unlocked = "images/collectibles/small/Illustration106 (4).png",locked="images/collectibles/locked.jpg")
+            add gallery.make_button(name="kartinka",unlocked = "images/collectibles/small/Illustration106 (8).png",locked="images/collectibles/locked.jpg")
+            add gallery.make_button(name="telephon",unlocked = "images/collectibles/small/Illustration106 (6).png",locked="images/collectibles/locked.jpg")
 
             spacing 15
         textbutton "Return" action Return()
