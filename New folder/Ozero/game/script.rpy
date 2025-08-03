@@ -1,14 +1,19 @@
-﻿# $ persistent.pink_unlocked = True
+﻿define grip_size = 75
+define puzzle_field_size = 1100
+define puzzle_field_offset = 60
+define puzzle_piece_size = 450
+define active_area_size = puzzle_piece_size - (grip_size * 2)
 
 define gg = Character("людина")
-
 define Ukralke = Character("русалка")
+
+
 
 image bg_ozero_night = "ozero_night.png"
 image bg_ozero_day = "ozero_day.png"
 image bg_forest_day = "forest_day.png"
 image bg_forest_night = "forest_night.png"
-image bg_water_day = "water_day.png"
+image bg_water_day = "BG/water_day.png"
 image bg_water_night = "water_night.png"
 
 
@@ -87,9 +92,19 @@ label start:
 #    $ persistent.9_unlocked = True
     menu:
         "Полин":
-            jump polyn
+            jump pazzle1
         "Петрушка":
             jump Petrushka
+
+label pazzle1:
+    scene bg_water_day
+    centered "Подивимося що тут...{nw}"
+    $ grid_width = 8
+    $ grid_height = 5
+    $ chosen_img = "puzzle/puzzle1.png"
+    call puzzle from _call_puzzle1
+    scene bg_forest_day
+    jump polyn
 
 # перший вибір
 label polyn:
