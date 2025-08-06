@@ -53,7 +53,7 @@ init python:
 
 screen album:
     tag menu
-    add "p.jpg"
+    add "game_menu.png"
     
 
     frame:
@@ -63,15 +63,15 @@ screen album:
             xalign 0.5
             yalign 0.5
 
-            add gallery.make_button(name="tabletki",unlocked = "images/collectibles/small/Illustration106 (5).png",locked="images/collectibles/locked.jpg")
-            add gallery.make_button(name="note",unlocked = "images/collectibles/small/Illustration106.png",locked="images/collectibles/locked.jpg")
-            add gallery.make_button(name="godinik",unlocked = "images/collectibles/small/Illustration106 (7).png",locked="images/collectibles/locked.jpg")
-            add gallery.make_button(name="niz",unlocked = "images/collectibles/small/Illustration106 (8).png",locked="images/collectibles/locked.jpg")
-            add gallery.make_button(name="kvitka",unlocked = "images/collectibles/small/Illustration106 (1).png",locked="images/collectibles/locked.jpg")
-            add gallery.make_button(name="mirror",unlocked = "images/collectibles/small/Illustration106 (2).png",locked="images/collectibles/locked.jpg")
-            add gallery.make_button(name="ochki",unlocked = "images/collectibles/small/Illustration106 (4).png",locked="images/collectibles/locked.jpg")
-            add gallery.make_button(name="kartinka",unlocked = "images/collectibles/small/Illustration106 (8).png",locked="images/collectibles/locked.jpg")
-            add gallery.make_button(name="telephon",unlocked = "images/collectibles/small/Illustration106 (6).png",locked="images/collectibles/locked.jpg")
+            add gallery.make_button(name="tabletki",unlocked = "images/collectibles/small/Illustration106 (5).png",locked="images/collectibles/locked.png")
+            add gallery.make_button(name="note",unlocked = "images/collectibles/small/Illustration106.png",locked="images/collectibles/locked.png")
+            add gallery.make_button(name="godinik",unlocked = "images/collectibles/small/Illustration106 (7).png",locked="images/collectibles/locked.png")
+            add gallery.make_button(name="niz",unlocked = "images/collectibles/small/Illustration106 (8).png",locked="images/collectibles/locked.png")
+            add gallery.make_button(name="kvitka",unlocked = "images/collectibles/small/Illustration106 (1).png",locked="images/collectibles/locked.png")
+            add gallery.make_button(name="mirror",unlocked = "images/collectibles/small/Illustration106 (2).png",locked="images/collectibles/locked.png")
+            add gallery.make_button(name="ochki",unlocked = "images/collectibles/small/Illustration106 (4).png",locked="images/collectibles/locked.png")
+            add gallery.make_button(name="kartinka",unlocked = "images/collectibles/small/Illustration106 (8).png",locked="images/collectibles/locked.png")
+            add gallery.make_button(name="telephon",unlocked = "images/collectibles/small/Illustration106 (6).png",locked="images/collectibles/locked.png")
 
             spacing 15
         textbutton "Return" action Return()
