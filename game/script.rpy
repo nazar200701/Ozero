@@ -158,13 +158,3 @@ label pet_sad_die:
     "Помираємо"
     return
 
-label no_water_ending:
-    scene bg_water_night
-    liza "Ні... Я не хочу!"
-    liza "Я не піду!"
-
-label yes_water_ending:
-    scene bg_water_night
-    liza "Він ніколи мене не покине... Він залишиться зі мною назавжди..."
-    liza "..."
-    liza "Страшно..."
