@@ -4,8 +4,8 @@ define puzzle_field_offset = 60
 define puzzle_piece_size = 450
 define active_area_size = puzzle_piece_size - (grip_size * 2)
 
-define gg = Character("людина")
-define Ukralke = Character("русалка")
+define liza = Character("Ліза")
+define polianna = Character("Поліанна")
 
 
 
