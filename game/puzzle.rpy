@@ -30,7 +30,7 @@ init python:
             return True
         return
 
-screen jigsaw:
+screen jigsaw():
     key "rollback" action [[]]
     key "rollforward" action [[]]
 
@@ -137,7 +137,7 @@ label win:
     hide win_img
     return
 
-screen control_scr:
+screen control_scr():
     default current_file = 0
     if current_file != 0:
         $ img_width, img_height = renpy.image_size(current_file)

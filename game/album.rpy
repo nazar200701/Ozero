@@ -51,7 +51,7 @@ init python:
     gallery.condition("persistent.coll9_unlocked")
 
 
-screen album:
+screen album():
     tag menu
     add "game_menu.png"
     
