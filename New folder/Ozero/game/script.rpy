@@ -158,3 +158,11 @@ label pet_sad_die:
     "Помираємо"
     return
 
+label no_water_ending:
+    gg "Ні... Я не хочу!"
+    gg "Я не піду!"
+
+label yes_water_ending:
+    gg "Він ніколи мене не покине... Він залишиться зі мною назавжди..."
+    gg "..."
+    gg "Страшно..."
