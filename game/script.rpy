@@ -26,60 +26,60 @@ label start:
 
     play music "1.mp3"
 
-    show gg at left    
-    gg "Ох він й сволота."
+    show liza at left    
+    liza "Ох він й сволота."
     
-    gg "Як я його терплю."
+    liza "Як я його терплю."
     
-    gg "Знову з якоюсь хвойдою шляється й припинив це ховати від мене..."
+    liza "Знову з якоюсь хвойдою шляється й припинив це ховати від мене..."
     #"(Пауза)"
-    gg "А вона?!"
+    liza "А вона?!"
 
-    gg "Як вона може гуляти з чужим хлопцем, ще й так його обіймати."
+    liza "Як вона може гуляти з чужим хлопцем, ще й так його обіймати."
 
     
-    show Ukralke at right
-    gg "..."
+    show polianna at right
+    liza "..."
 
-    Ukralke "Нормально, не забилась!"
-    Ukralke "Дякую за допомогу!"
+    polianna "Нормально, не забилась!"
+    polianna "Дякую за допомогу!"
 
-    gg "Але я нічого не зробила..."
+    liza "Але я нічого не зробила..."
 
-    Ukralke "Так це важко було не помітити"
-    gg "..."
-    Ukralke "Миленька, я бачу у тебе проблеми з кимось?"
-    Ukralke "Через це забігла аж сюди?"
+    polianna "Так це важко було не помітити"
+    liza "..."
+    polianna "Миленька, я бачу у тебе проблеми з кимось?"
+    polianna "Через це забігла аж сюди?"
     #"пауза"
-    Ukralke "До мене."
-    Ukralke "На озеро."
-    gg "Я... я не хотіла тебе турбувати"
+    polianna "До мене."
+    polianna "На озеро."
+    liza "Я... я не хотіла тебе турбувати"
     #"(пауза)"
 
-    show Ukralke at center
+    show polianna at center
     with moveinleft
     ## !!! РУХ ПЛАВНО, ДУЖЕ ПЛАВНО, МАЄ БУТИ ПЛАВНО!!! ПОТИПУ ПОВІЛЬНО
     ## о цей з низу те що нам треба КРИЛОКОТЕ КАЖУ ТЕ ЩО ЗНИЗУ В КОМЕНТАХ НАМ І ТРЕБА
     
     ##  MoveTransition(delay, *, enter=None, leave=None, old=False, layers=['master'], time_warp=_warper.linear, enter_time_warp=_warper.linear, leave_time_warp=_warper.linear)
-    Ukralke "Така мила, беззахисна."
+    polianna "Така мила, беззахисна."
     #"(пауза)"
-    Ukralke "Сумна й стурбована."
-    gg "..."
+    polianna "Сумна й стурбована."
+    liza "..."
 
-    Ukralke "Не бійся."
-    Ukralke "Тобі миленька, треба зробити  вибір"
+    polianna "Не бійся."
+    polianna "Тобі миленька, треба зробити  вибір"
     #"(пауза)"
-    Ukralke "I все"
-    gg "{font=Aptos-Italic.ttf}Вона мене лякає{/font}"
-    gg "{font=Aptos-Italic.ttf}Не можу рухатись. Холод, що віє від неї не дає мені і кроку ступити.{/font}"
-    gg "{font=Aptos-Italic.ttf}Ні, не підходь, будь ласка... {/font}"
+    polianna "I все"
+    liza "{font=Aptos-Italic.ttf}Вона мене лякає{/font}"
+    liza "{font=Aptos-Italic.ttf}Не можу рухатись. Холод, що віє від неї не дає мені і кроку ступити.{/font}"
+    liza "{font=Aptos-Italic.ttf}Ні, не підходь, будь ласка... {/font}"
     
-    Ukralke "Полин чи петрушка?"
+    polianna "Полин чи петрушка?"
     
-    gg "Щ... що?"
+    liza "Щ... що?"
     #"(пауза)"
-    Ukralke "ПОЛИН чи петрушка?!"
+    polianna "ПОЛИН чи петрушка?!"
 
 #    $ persistent.1_unlocked = True
 #    $ persistent.2_unlocked = True
@@ -116,14 +116,14 @@ label polyn:
         "Закохуємося, живимо довго":
             jump pol_live_long_life
         "Я втоплюся":
-            jump pol_gg_want_to_die
+            jump pol_liza_want_to_die
         "Закохуємося, але боїмося":
             jump pol_fear 
 # вибори полину
 label pol_live_long_life:
     "Закохуємося, живимо довго"
     return
-label pol_gg_want_to_die:
+label pol_liza_want_to_die:
     "Я втоплюся"
     return
 # страх
@@ -159,10 +159,10 @@ label pet_sad_die:
     return
 
 label no_water_ending:
-    gg "Ні... Я не хочу!"
-    gg "Я не піду!"
+    liza "Ні... Я не хочу!"
+    liza "Я не піду!"
 
 label yes_water_ending:
-    gg "Він ніколи мене не покине... Він залишиться зі мною назавжди..."
-    gg "..."
-    gg "Страшно..."
+    liza "Він ніколи мене не покине... Він залишиться зі мною назавжди..."
+    liza "..."
+    liza "Страшно..."
