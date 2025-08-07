@@ -2,4 +2,4 @@
 define poli = Character(_("Поліанна"))
 
 label start:
-    jump no_water_ending
+    jump day1
