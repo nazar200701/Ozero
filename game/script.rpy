@@ -9,12 +9,12 @@ define polianna = Character("Поліанна")
 
 
 
-image bg_ozero_night = "ozero_night.png"
-image bg_ozero_day = "ozero_day.png"
-image bg_forest_day = "forest_day.png"
-image bg_forest_night = "forest_night.png"
+image bg_ozero_night = "BG/ozero_night.png"
+image bg_ozero_day = "BG/ozero_day.png"
+image bg_forest_day = "BG/forest_day.png"
+image bg_forest_night = "BG/forest_night.png"
 image bg_water_day = "BG/water_day.png"
-image bg_water_night = "water_night.png"
+image bg_water_night = "BG/water_night.png"
 
 
 
@@ -159,10 +159,12 @@ label pet_sad_die:
     return
 
 label no_water_ending:
+    scene bg_water_night
     liza "Ні... Я не хочу!"
     liza "Я не піду!"
 
 label yes_water_ending:
+    scene bg_water_night
     liza "Він ніколи мене не покине... Він залишиться зі мною назавжди..."
     liza "..."
     liza "Страшно..."
