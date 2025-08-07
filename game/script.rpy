@@ -90,12 +90,15 @@ label start:
 #    $ persistent.7_unlocked = True
 #    $ persistent.8_unlocked = True
 #    $ persistent.9_unlocked = True
+    
+    jump Petrushka
+    
     menu:
         "Полин":
             jump pazzle1
         "Петрушка":
             jump Petrushka
-
+        
 label pazzle1:
     scene bg_water_day
     centered "Подивимося що тут...{nw}"
@@ -137,6 +140,7 @@ label pol_fear_kill:
     "ти вбила русалку"
     return
 
+# вибори петрушки
 label Petrushka:
     "Гам гам"
     menu:
@@ -144,7 +148,7 @@ label Petrushka:
             jump pet_happy_die
         "Закохуємося, не хочемо померти":
             jump pet_sad_die
-# вибори петрушки
+
 label pet_happy_die:
     "Закохуємося, хочемо померти"
     "Помираємо"
