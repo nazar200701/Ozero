@@ -1,64 +1,64 @@
 label day1:
-    scene bg_ozero_day
-    $ persistent.coll3_unlocked = True
+    scene water_night
+    # $ persistent.coll3_unlocked = True
+    # play music "1.mp3"
 
-    play music "1.mp3"
-
-    show liza at left    
+    show liza_1 at left
     liza "Яка ж він сволота. В мене вже немає сил терпіти ці знущання…"
-    
-    liza "Знову десь шляється з черговою шльондрою…
-"
-    
+    liza "Знову десь шляється з черговою шльондрою…"
     liza "І цього разу навіть не приховує її! І жодного сорому, жодного… "
-    #"(Пауза)"
-    liza "А вона?!"
-    show Liza_2
+    #"(пауза)"
+    liza "А вона?! Як у НЕЇ совісті вистачає гуляти з чужим хлопцем і так його обіймати!"
+    #"(пауза)"
+    show liza_2 at left
+
     liza "Як вона може гуляти з чужим хлопцем, ще й так його обіймати."
 
-    
-    show polianna at right
+    show liza_3 at left
+    show poli_1 at right
+
+    poli "Ой блять!"
     liza "..."
 
-    polianna "Нормально, не забилась!"
-    polianna "Дякую за допомогу!"
+    poli "Нормально, не забилась!"
+    poli "Дякую за допомогу!"
 
     liza "Але я нічого не зробила..."
 
-    polianna "Так це важко було не помітити"
+    poli "Так це важко було не помітити"
     liza "..."
-    polianna "Миленька, я бачу у тебе проблеми з кимось?"
-    polianna "Через це забігла аж сюди?"
-    #"пауза"
-    polianna "До мене."
-    polianna "На озеро."
+    poli "Миленька, я бачу у тебе проблеми з кимось?"
+    poli "Через це забігла аж сюди?"
+    #(пауза)
+    poli "До мене."
+    poli "На озеро."
     liza "Я... я не хотіла тебе турбувати"
     #"(пауза)"
 
-    show polianna at center
+    show poli_1 at center
     with moveinleft
     ## !!! РУХ ПЛАВНО, ДУЖЕ ПЛАВНО, МАЄ БУТИ ПЛАВНО!!! ПОТИПУ ПОВІЛЬНО
     ## о цей з низу те що нам треба КРИЛОКОТЕ КАЖУ ТЕ ЩО ЗНИЗУ В КОМЕНТАХ НАМ І ТРЕБА
-    
+
     ##  MoveTransition(delay, *, enter=None, leave=None, old=False, layers=['master'], time_warp=_warper.linear, enter_time_warp=_warper.linear, leave_time_warp=_warper.linear)
-    polianna "Така мила, беззахисна."
+    poli "Така мила, беззахисна."
     #"(пауза)"
-    polianna "Сумна й стурбована."
+    poli "Сумна й стурбована."
     liza "..."
 
-    polianna "Не бійся."
-    polianna "Тобі миленька, треба зробити  вибір"
+    poli "Не бійся."
+    poli "Тобі миленька, треба зробити  вибір"
     #"(пауза)"
-    polianna "I все"
+    poli "I все"
     liza "{font=Aptos-Italic.ttf}Вона мене лякає{/font}"
     liza "{font=Aptos-Italic.ttf}Не можу рухатись. Холод, що віє від неї не дає мені і кроку ступити.{/font}"
     liza "{font=Aptos-Italic.ttf}Ні, не підходь, будь ласка... {/font}"
-    
-    polianna "Полин чи петрушка?"
-    
+
+    poli "Полин чи петрушка?"
+
     liza "Щ... що?"
     #"(пауза)"
-    polianna "ПОЛИН чи петрушка?!"
+    poli "ПОЛИН чи петрушка?!"
 
 #    $ persistent.1_unlocked = True
 #    $ persistent.2_unlocked = True
@@ -69,23 +69,21 @@ label day1:
 #    $ persistent.7_unlocked = True
 #    $ persistent.8_unlocked = True
 #    $ persistent.9_unlocked = True
-    
-    jump Petrushka
-    
+
     menu:
         "Полин":
             jump pazzle1
         "Петрушка":
             jump Petrushka
-        
+
 label pazzle1:
-    scene bg_water_day
+    scene water_day
     centered "Подивимося що тут...{nw}"
     $ grid_width = 8
     $ grid_height = 5
     $ chosen_img = "puzzle/puzzle1.png"
     call puzzle from _call_puzzle1
-    scene bg_forest_day
+    scene forest_day
     jump polyn
 
 # перший вибір
@@ -97,7 +95,7 @@ label polyn:
         "Я втоплюся":
             jump pol_liza_want_to_die
         "Закохуємося, але боїмося":
-            jump pol_fear 
+            jump pol_fear
 # вибори полину
 label pol_live_long_life:
     "Закохуємося, живимо довго"

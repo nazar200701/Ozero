@@ -1,3 +1,9 @@
+define grip_size = 75
+define puzzle_field_size = 1100
+define puzzle_field_offset = 60
+define puzzle_piece_size = 450
+define active_area_size = puzzle_piece_size - (grip_size * 2)
+
 init python:
 
     def piece_dragged(drags, drop):
@@ -34,7 +40,7 @@ screen jigsaw():
     key "rollback" action [[]]
     key "rollforward" action [[]]
 
-    add im.Scale("puzz_imgs/_puzzle_field.png", img_width, img_height) pos(puzzle_field_offset, puzzle_field_offset)
+    add im.Scale("puzzle_pieces/_puzzle_field.png", img_width, img_height) pos(puzzle_field_offset, puzzle_field_offset)
 
     draggroup:
         for i in range(grid_width):
@@ -44,7 +50,7 @@ screen jigsaw():
                 $ my_y = j * int(active_area_size * y_scale_index) + puzzle_field_offset
                 drag:
                     drag_name name
-                    child im.Scale("puzz_imgs/_blank_space.png", int(active_area_size * x_scale_index), int(active_area_size * y_scale_index))
+                    child im.Scale("puzzle_pieces/_blank_space.png", int(active_area_size * x_scale_index), int(active_area_size * y_scale_index))
                     draggable False
                     xpos my_x ypos my_y
 
@@ -118,10 +124,10 @@ label puzzle:
 
                 imagelist[i, j] = im.Composite(
                     (int(puzzle_piece_size * x_scale_index), int(puzzle_piece_size * y_scale_index)),
-                    (0, 0), im.AlphaMask(temp_img, im.Scale(im.Rotozoom("puzz_imgs/_00%s.png" % jigsaw_grid[grid_width * j + i][0], 0, 1.0), int(puzzle_piece_size * x_scale_index), int(puzzle_piece_size * y_scale_index))),
-                    (0, 0), im.AlphaMask(temp_img, im.Scale(im.Rotozoom("puzz_imgs/_00%s.png" % jigsaw_grid[grid_width * j + i][1], 270, 1.0), int(puzzle_piece_size * x_scale_index), int(puzzle_piece_size * y_scale_index))),
-                    (0, 0), im.AlphaMask(temp_img, im.Scale(im.Rotozoom("puzz_imgs/_00%s.png" % jigsaw_grid[grid_width * j + i][2], 180, 1.0), int(puzzle_piece_size * x_scale_index), int(puzzle_piece_size * y_scale_index))),
-                    (0, 0), im.AlphaMask(temp_img, im.Scale(im.Rotozoom("puzz_imgs/_00%s.png" % jigsaw_grid[grid_width * j + i][3], 90, 1.0), int(puzzle_piece_size * x_scale_index), int(puzzle_piece_size * y_scale_index)))
+                    (0, 0), im.AlphaMask(temp_img, im.Scale(im.Rotozoom("puzzle_pieces/_00%s.png" % jigsaw_grid[grid_width * j + i][0], 0, 1.0), int(puzzle_piece_size * x_scale_index), int(puzzle_piece_size * y_scale_index))),
+                    (0, 0), im.AlphaMask(temp_img, im.Scale(im.Rotozoom("puzzle_pieces/_00%s.png" % jigsaw_grid[grid_width * j + i][1], 270, 1.0), int(puzzle_piece_size * x_scale_index), int(puzzle_piece_size * y_scale_index))),
+                    (0, 0), im.AlphaMask(temp_img, im.Scale(im.Rotozoom("puzzle_pieces/_00%s.png" % jigsaw_grid[grid_width * j + i][2], 180, 1.0), int(puzzle_piece_size * x_scale_index), int(puzzle_piece_size * y_scale_index))),
+                    (0, 0), im.AlphaMask(temp_img, im.Scale(im.Rotozoom("puzzle_pieces/_00%s.png" % jigsaw_grid[grid_width * j + i][3], 90, 1.0), int(puzzle_piece_size * x_scale_index), int(puzzle_piece_size * y_scale_index)))
                 )
 
                 placedlist[i, j] = False
@@ -147,9 +153,9 @@ screen control_scr():
 
     python:
         extensions = [".jpg", ".jpeg", ".png"]
-        image_files = [fn for fn in renpy.list_files() if not fn.startswith(("_", "gui", "puzz_imgs")) and any(fn.lower().endswith(ext) for ext in extensions)]
+        image_files = [fn for fn in renpy.list_files() if not fn.startswith(("_", "gui", "puzzle_pieces")) and any(fn.lower().endswith(ext) for ext in extensions)]
         image_files.sort()
 
     frame:
-        background Frame("puzz_imgs/_puzzle_field.png", 0, 0)
+        background Frame("puzzle_pieces/_puzzle_field.png", 0, 0)
         xpos 100 ypos 100
