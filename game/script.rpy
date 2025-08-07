@@ -8,7 +8,7 @@ define liza = Character("Ліза")
 define polianna = Character("Поліанна")
 
 
-
+# bg
 image bg_ozero_night = "ozero_night.png"
 image bg_ozero_day = "ozero_day.png"
 image bg_forest_day = "forest_day.png"
@@ -27,14 +27,15 @@ label start:
     play music "1.mp3"
 
     show liza at left    
-    liza "Ох він й сволота."
+    liza "Яка ж він сволота. В мене вже немає сил терпіти ці знущання…"
     
-    liza "Як я його терплю."
+    liza "Знову десь шляється з черговою шльондрою…
+"
     
-    liza "Знову з якоюсь хвойдою шляється й припинив це ховати від мене..."
+    liza "І цього разу навіть не приховує її! І жодного сорому, жодного… "
     #"(Пауза)"
     liza "А вона?!"
-
+    show Liza_2
     liza "Як вона може гуляти з чужим хлопцем, ще й так його обіймати."
 
     
