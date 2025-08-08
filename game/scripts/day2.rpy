@@ -8,9 +8,9 @@ label day2Petr:
 
     scene ozero_day
     show liza_6 at pos_liza
-    show Poli_6 at pos_poli
-    
-
+    show poli_6 at pos_poli
+     
+    # на цьому закінчив(завтра продвожу 09,08,2025)
     menu:
         "Закохуємося, хочемо померти":
             jump pet_happy_die

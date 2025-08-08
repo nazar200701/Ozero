@@ -2,8 +2,8 @@ label Petrushka:
     scene ozero_night
     #/Музика: Тривожна з переходом в спокійну/
     
-    show Liza_4 at pos_liza
-    show Poli_3 at pos_poli
+    show liza_4 at pos_liza
+    show poli_3 at pos_poli
     
     liza "Гадаю… Петрушка?"
     pause 1.5
