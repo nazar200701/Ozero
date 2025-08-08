@@ -1,7 +1,11 @@
+image eheeeee_Dieeeeeee = "eheeeee_Dieeeeeee.png"
 label day1:
     scene water_night
     # $ persistent.coll3_unlocked = True
     # play music "1.mp3"
+    scene eheeeee_Dieeeeeee
+    show o_ptashka
+    liza "Яка ж він сволота. В мене вже немає сил терпіти ці знущання…"
 
     show liza_1 at pos_liza
         
@@ -20,39 +24,37 @@ label day1:
 
     poli "Ой блять!"
     liza "..."
-
-    poli "Нормально, не забилась!"
-    poli "Дякую за допомогу!"
-
-    liza "Але я нічого не зробила..."
-
-    poli "Так це важко було не помітити"
+    poli "*Хмпф* Вельми вдячна за допомогу!"
+    liza "Але x я нічого не зробила..."
+    poli "А то я не помітила..."
     liza "..."
-    poli "Миленька, я бачу у тебе проблеми з кимось?"
-    poli "Через це забігла аж сюди?"
-    #(пауза)
-    poli "До мене."
-    poli "На озеро."
-    liza "Я... я не хотіла тебе турбувати"
-    #"(пауза)"
-
-    show poli_1 at center
+    show poli_2 at pos_poli
+    poli "Ой, бачу на серці смуток? Невже коханий образив?"
+    poli "Що ж скоїлось, що ти забігла так далеко від дому?"
+    pause 1.5
+    poli "Аж сюди... До мене... На моє озеро"
+    pause 1.5
+    liza "Я... Пробач мені, я не хотіла тебе турбувати."
+    pause 1.5
+    hide poli_2
+    # /Персонаж Поліанна наближається до ЛІЗА/
+    
+    show poli_2 at pos_poli
     with moveinleft
-    ## о цей з низу те що нам треба 
-    ##  MoveTransition(delay, *, enter=None, leave=None, old=False, layers=['master'], time_warp=_warper.linear, enter_time_warp=_warper.linear, leave_time_warp=_warper.linear)
-    poli "Така мила, беззахисна."
-    #"(пауза)"
-    poli "Сумна й стурбована."
+
+    poli "Така красива… Така беззахисна."
+    pause 1.5
+    poli "Така сумна… Така стурбована."
+    
     liza "..."
+    poli "Не бійся мене, мила дівчинко, я ж не така страшна..."
+    poli "Відповіси на моє питання, любонько, та й дізнаємося доленьку твою..."
 
-    poli "Не бійся."
-    poli "Тобі миленька, треба зробити  вибір"
-    #"(пауза)"
-    poli "I все"
-    liza "{italic}Вона мене лякає{/italic}"
-    liza "{italic}Не можу рухатись. Холод, що віє від неї не дає мені і кроку ступити.{/italic}"
-    liza "{italic}Ні, не підходь, будь ласка... {/italic}"
-
+    liza "{italic}Вона мене лякає.{/italic}"
+    liza "{italic}Не можу рухатись... Чому раптом стало так холодно?.. Це… Це від неї віє холодом, що не дає мені й кроку ступити.{/italic}"
+    liza "{italic}Ні… Ні, не підходь до мене! Ні! Ні, будь ласка…{/italic}"
+    hide poli_2
+    show poli_3
     poli "Полин чи петрушка?"
 
     liza "Щ... що?"
@@ -71,7 +73,7 @@ label day1:
 
     menu:
         "Полин":
-            jump pazzle1
+            jump polyn
         "Петрушка":
             jump Petrushka
 
@@ -85,51 +87,4 @@ label pazzle1:
     scene forest_day
     jump polyn
 
-# перший вибір
-label polyn:
-    "Молодець"
-    menu:
-        "Закохуємося, живимо довго":
-            jump pol_live_long_life
-        "Я втоплюся":
-            jump pol_liza_want_to_die
-        "Закохуємося, але боїмося":
-            jump pol_fear
-# вибори полину
-label pol_live_long_life:
-    "Закохуємося, живимо довго"
-    return
-label pol_liza_want_to_die:
-    "Я втоплюся"
-    return
-# страх
-label pol_fear:
-    menu:
-        "Втікти":
-            jump pol_fear_run
-        "Вбити":
-            jump pol_fear_kill
-label pol_fear_run:
-    "ти втікла"
-    return
-label pol_fear_kill:
-    "ти вбила русалку"
-    return
 
-# вибори петрушки
-label Petrushka:
-    "Гам гам"
-    menu:
-        "Закохуємося, хочемо померти":
-            jump pet_happy_die
-        "Закохуємося, не хочемо померти":
-            jump pet_sad_die
-
-label pet_happy_die:
-    "Закохуємося, хочемо померти"
-    "Помираємо"
-    return
-label pet_sad_die:
-    "Закохуємося, не хочемо померти"
-    "Помираємо"
-    return
