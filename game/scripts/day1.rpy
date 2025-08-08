@@ -50,9 +50,9 @@ label day1:
     poli "Тобі миленька, треба зробити  вибір"
     #"(пауза)"
     poli "I все"
-    liza "{font=Aptos-Italic.ttf}Вона мене лякає{/font}"
-    liza "{font=Aptos-Italic.ttf}Не можу рухатись. Холод, що віє від неї не дає мені і кроку ступити.{/font}"
-    liza "{font=Aptos-Italic.ttf}Ні, не підходь, будь ласка... {/font}"
+    liza "{italic}Вона мене лякає{/italic}"
+    liza "{italic}Не можу рухатись. Холод, що віє від неї не дає мені і кроку ступити.{/italic}"
+    liza "{italic}Ні, не підходь, будь ласка... {/italic}"
 
     poli "Полин чи петрушка?"
 
