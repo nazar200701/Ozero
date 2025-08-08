@@ -207,3 +207,7 @@ init python:
 ## by a slash.
 
 # define build.itch_project = "renpytom/test-project"
+
+
+# Configure shaders
+define config.default_textshader = 'typewriter'
