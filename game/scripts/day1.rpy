@@ -3,19 +3,20 @@ label day1:
     # $ persistent.coll3_unlocked = True
     # play music "1.mp3"
 
-    show liza_1 at left
+    show liza_1 at pos_liza
+        
     liza "Яка ж він сволота. В мене вже немає сил терпіти ці знущання…"
     liza "Знову десь шляється з черговою шльондрою…"
     liza "І цього разу навіть не приховує її! І жодного сорому, жодного… "
     #"(пауза)"
     liza "А вона?! Як у НЕЇ совісті вистачає гуляти з чужим хлопцем і так його обіймати!"
     #"(пауза)"
-    show liza_2 at left
+    show liza_2 at pos_liza
 
     liza "Як вона може гуляти з чужим хлопцем, ще й так його обіймати."
 
-    show liza_3 at left
-    show poli_1 at right
+    show liza_3 at pos_liza
+    show poli_1 at pos_poli
 
     poli "Ой блять!"
     liza "..."
@@ -37,9 +38,7 @@ label day1:
 
     show poli_1 at center
     with moveinleft
-    ## !!! РУХ ПЛАВНО, ДУЖЕ ПЛАВНО, МАЄ БУТИ ПЛАВНО!!! ПОТИПУ ПОВІЛЬНО
-    ## о цей з низу те що нам треба КРИЛОКОТЕ КАЖУ ТЕ ЩО ЗНИЗУ В КОМЕНТАХ НАМ І ТРЕБА
-
+    ## о цей з низу те що нам треба 
     ##  MoveTransition(delay, *, enter=None, leave=None, old=False, layers=['master'], time_warp=_warper.linear, enter_time_warp=_warper.linear, leave_time_warp=_warper.linear)
     poli "Така мила, беззахисна."
     #"(пауза)"
