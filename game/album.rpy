@@ -1,11 +1,10 @@
 init python:
 
-    gallery = Gallery()
-
+    gallery = Gallery() 
     # --- Налаштування Зображення 1 ---
     gallery.button("tabletki")
-    gallery.image("coll1_tablerki") # Зображення, яке буде показано
-    gallery.condition("persistent.coll1_unlocked") # Змінна для перевірки
+    gallery.image("coll1_tablerki") 
+    gallery.condition("persistent.coll1_unlocked")
 
 
     # --- Налаштування Зображення 2 ---
@@ -16,8 +15,7 @@ init python:
 
     # --- Налаштування Зображення 3 ---
     gallery.button("godinik")
-    gallery.image("images/collectibles/coll3_godinik.jpg") # Перейменовано з "coll3_" для ясності
-    "ffd"
+    gallery.image("images/collectibles/coll3_godinik.jpg")
     gallery.condition("persistent.coll3_unlocked")
 
     # --- Налаштування Зображення 4 ---
@@ -26,7 +24,7 @@ init python:
     gallery.condition("persistent.coll4_unlocked")
     # --- Налаштування Зображення 5 ---
     gallery.button("kvitka")
-    gallery.image("coll5_kvitka")
+    gallery.image("images/collectibles/coll5_kvitka.png")
     gallery.condition("persistent.coll5_unlocked")
 
     # --- Налаштування Зображення 6 ---
