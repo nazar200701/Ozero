@@ -7,14 +7,15 @@ label day1:
     liza "Яка ж він сволота. В мене вже немає сил терпіти ці знущання…"
     liza "Знову десь шляється з черговою шльондрою…"
     liza "І цього разу навіть не приховує її! І жодного сорому, жодного… "
-    #"(пауза)"
+    pause 1.5
     liza "А вона?! Як у НЕЇ совісті вистачає гуляти з чужим хлопцем і так його обіймати!"
-    #"(пауза)"
+    pause 1.5
     hide liza_1
     show liza_2 at pos_liza
-
-    liza "Як вона може гуляти з чужим хлопцем, ще й так його обіймати."
-    hide liza_2
+    
+    scene ozero_night
+    #/Музика: Спокійна/
+    #/Звуки: тріск гілок, падіння/
     show liza_3 at pos_liza
     show poli_1 at pos_poli
 
@@ -34,10 +35,10 @@ label day1:
     liza "Я... Пробач мені, я не хотіла тебе турбувати."
     pause 1.5
     hide poli_2
-    # /Персонаж Поліанна наближається до ЛІЗА/
+    # +
+    ## /Персонаж Поліанна наближається до ЛІЗА/
     
-    show poli_2 at pos_poli
-    with moveinleft
+    show poli_2 at pos_poli_centr_move
 
     poli "Така красива… Така беззахисна."
     pause 1.5
@@ -51,7 +52,7 @@ label day1:
     liza "{italic}Не можу рухатись... Чому раптом стало так холодно?.. Це… Це від неї віє холодом, що не дає мені й кроку ступити.{/italic}"
     liza "{italic}Ні… Ні, не підходь до мене! Ні! Ні, будь ласка…{/italic}"
     hide poli_2
-    show poli_3 at pos_poli_centr_move 
+    show poli_3  
     poli "Полин чи петрушка?"
 
     liza "Щ... що?"
@@ -67,7 +68,6 @@ label day1:
 #    $ persistent.7_unlocked = True
 #    $ persistent.8_unlocked = True
 #    $ persistent.9_unlocked = True
-
     menu:
         "Полин":
             jump polyn
