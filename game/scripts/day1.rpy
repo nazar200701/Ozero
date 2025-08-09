@@ -5,10 +5,10 @@ label day1:
 
     pause 1.5
 
-    # $ persistent.coll3_unlocked = True
-    # play music "1.mp3"
-    
     liza "Яка ж він сволота. В мене вже немає сил терпіти ці знущання…"
+
+    play music tense_music fadein 1
+
     show liza_1 at pos_liza
     liza "Знову десь шляється з черговою шльондрою…" with dissolve
     liza "І цього разу навіть не приховує її! І жодного сорому, жодного… "
@@ -17,17 +17,21 @@ label day1:
     pause 1.5
     hide liza_1
     show liza_2 at pos_liza
-    
+
     scene ozero_night
-    #/Музика: Спокійна/
-    #/Звуки: тріск гілок, падіння/
+
+    stop music
+    play sound human_impact_on_ground
     show liza_3 at pos_liza
 
     poli "Ой блять!"
     liza "..."
+
+    play music dialogue_music fadein 1
+
     show poli_1 at pos_poli
     with dissolve
-    
+
     poli "*Хмпф* Вельми вдячна за допомогу!"
     liza "Але ж я нічого не зробила..."
     poli "А то я не помітила..."
@@ -39,22 +43,24 @@ label day1:
     pause 1.5
 
     poli "{cps=20}Аж сюди... До мене... На моє озеро...{/cps}"
-    
+
     liza "Я... Пробач мені, я не хотіла тебе турбувати."
     pause 1.5
     hide poli_2
     # +
     ## /Персонаж Поліанна наближається до ЛІЗА/
-    
+
     show poli_2 at pos_poli_rig_to_centr_move
 
     poli "Така красива… Така беззахисна."
     pause 1.5
     poli "Така сумна… Така стурбована."
-    
+
     liza "..."
     poli "Не бійся мене, мила дівчинко, я ж не така страшна..."
     poli "Відповіси на моє питання, любонько, та й дізнаємося доленьку твою..."
+
+    stop music fadeout 1
 
     liza "{italic}Вона мене лякає.{/italic}"
     liza "{italic}Не можу рухатись... Чому раптом стало так холодно?.. Це… Це від неї віє холодом, що не дає мені й кроку ступити.{/italic}"
@@ -66,6 +72,7 @@ label day1:
     liza "Щ... що?"
     #"(пауза)"
     poli "ПОЛИН чи петрушка?!"
+    play music tense_music fadein 1
 
 #    $ persistent.1_unlocked = True
 #    $ persistent.2_unlocked = True

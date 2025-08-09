@@ -2,7 +2,7 @@ label day2Petr:
     scene forest_day
     # /Музика: Спокійна/
     show liza_6 at pos_liza
-    
+
     liza "{italic}Сподіваюсь Поліанна прийде…{/italic}"
     liza "{italic}Може мені їй щось подарувати?{/italic}"
 
@@ -10,10 +10,13 @@ label day2Petr:
     show liza_6 at pos_liza
     pause 1.5
     show poli_6 at pos_poli
+
+    play music dialogue_music fadein 1
+
     poli "Ви тільки-но подивіться хто ж це прийшов!"
     poli "Невже це моє сонечко!"
     pause 1.0
-    hide liza_6 
+    hide liza_6
     hide poli_6
     show liza_7 at pos_liza
     show poli_7 at pos_poli
@@ -33,7 +36,7 @@ label day2Petr_2:
     liza "Так, хочу…"
     show black with fade
     liza "{italic}Тримай себе в руках, не витріщайся на неї… Не витріщайся!{/italic}"
-    hide black 
+    hide black
     show poli_7 at pos_poli
     hide liza_8
     show liza_9 at pos_liza
@@ -53,8 +56,11 @@ label day2Petr_2:
     liza "Я… я не знаю. На дуже?"
     poli "Ахахахаха. На дуже?"
     pause 1.0
+
+    stop music fadeout 1
+
     poli "Ходи до мене, серденько…"
-    hide poli_7 
+    hide poli_7
     show poli_8 at pos_poli
     liza "Навіщо?"
     pause 1.5
@@ -75,7 +81,7 @@ label day2Petr_2:
     pause 1.5
     poli "Ахахаха…"
     poli "Моя ти хороша."
-    poli "Що ж, я зовсім не проти, якщо це стане правдою."    
+    poli "Що ж, я зовсім не проти, якщо це стане правдою."
     scene hand
     pause  1.5
     liza "{italic}Знову цей холод. Я відчуваю як від її дотику поколює шкіру, але… це приємно… Заспокоює…{/italic}"
