@@ -1,6 +1,7 @@
 ﻿define liza = Character(_("Ліза"))
 define poli = Character(_("Поліанна"))
 define tele = Character("Телефон")
+
 transform pos_liza:
     zoom 0.3
     ypos 150
@@ -25,5 +26,8 @@ transform pos_poli_cen_to_right_move:
     ypos 25
     xalign 0.5
     ease 1.0 xalign 0.95
+
+define slow_dissolve = Dissolve(3)
+
 label start:
     jump day1
