@@ -21,10 +21,12 @@ label day1:
     scene ozero_night
 
     stop music
-    play sound human_impact_on_ground
+
     show liza_3 at pos_liza
 
+    play sound branch_creak
     poli "Ой блять!"
+    play sound human_impact_on_ground
     liza "..."
 
     play music dialogue_music fadein 1

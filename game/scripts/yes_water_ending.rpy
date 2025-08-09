@@ -1,6 +1,6 @@
 label yes_water_ending:
     scene water_night
-    # /музика: напружена/
+    play music tense_music fadein 1
 
     show liza_15 at pos_liza
     liza "Він ніколи мене не покине... Він залишиться зі мною назавжди..."
