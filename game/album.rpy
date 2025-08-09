@@ -74,4 +74,4 @@ screen album():
             add gallery.make_button(name="telephon",unlocked = "images/collectibles/small/Illustration106 (6).png",locked="images/collectibles/locked.png")
 
             spacing 15
-        textbutton _("Назад") action Return()
+        textbutton _("Повернутися") action Return()
