@@ -1,7 +1,8 @@
 label no_water_ending:
     scene water_night
-    show poli_15 at pos_poli
+    show poli_15 at pos_poli   
     show liza_12 at pos_liza
+    play music tense_music fadein 1
     liza "Ні... Я не хочу!"
     pause
     liza "Я не піду!"
@@ -20,6 +21,8 @@ label no_water_ending:
     liza "НІ! Ти мені не подруга! Ти лише хочеш..."
 
     # /звук ляпаса/
+    play sound slap
+
     # /флеш білий, поступово переходить у прозорість/
     show liza_14 at pos_liza
     liza "Щ-що т-ти..."
@@ -49,13 +52,13 @@ label no_water_ending:
     poli "Ти залишишся тут!"
 
     # /Вмикаєм музику на фінал/
+    play music final_music fadein 1
 
     liza "{italic}Що?.. Я не...{/italic}"
     # *тут було б гарно таким напівпрозорим показати фрейм, де гравець обирає петрушку*
     liza "{italic}Петрушка... Це все через це?.. Вона нічого не пояснила — як я могла зрозуміти?..{/italic}"
 
-    # /звук падіння у воду/
-    # /сцена: погляд від обличчя русалки/
+    play sound water_splash
     scene nooo_helpp
 
     poli "Не пручайся… Все буде добре. Ми будемо разом..."
@@ -74,6 +77,7 @@ label no_water_ending:
     # /сцена темряви, музика стихає/
     show black
     with dissolve
+    stop music
 
     liza "Вона ж не людина, так?.. Від неї завжди віяло холодом, як від померлої.."
     liza "Її довге волосся, що просто лежало на воді тепер тягнеться до мене… Воно огортає мої руки, мої ноги..."
