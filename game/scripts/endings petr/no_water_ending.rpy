@@ -88,7 +88,6 @@ label no_water_ending:
     window hide
 
     # /сцена з очима русалки через декілька секунд з прозорості/
-    define slow_dissolve = Dissolve(3)
     show eyea
     with slow_dissolve
 
