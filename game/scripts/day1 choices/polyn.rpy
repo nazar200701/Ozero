@@ -3,23 +3,28 @@ label polyn:
     menu:
         "Закохуємося, живимо довго":
             jump pol_live_long_life
-        "Я втоплюся":
+        "Іду втоплюся...":
             jump pol_liza_want_to_die
-        "Закохуємося, але боїмося":
+        "Вона мені подобається, але...":
             jump pol_fear
 # вибори полину
 label pol_live_long_life:
     "Закохуємося, живимо довго"
     return
 label pol_liza_want_to_die:
-    "Я втоплюся"
+    "У річці..."
+    "Глибокій.."
+    "... Буль буль ..."
+    
     return
 # страх
 label pol_fear:
     menu:
-        "Втікти":
+        "i am scared":
+            return
             jump pol_fear_run
-        "Вбити":
+        "i am brave":
+            return
             jump pol_fear_kill
 label pol_fear_run:
     "ти втікла"

@@ -13,7 +13,7 @@ label Petrushka:
     liza "Спочатку він це приховував, але тепер, мабуть, зрозумів: я все одно не піду від нього, попри все…"
     pause 1.5
     poli "Чого ж ти тоді…"
-    hide Liza_4
+    hide liza_4
     hide poli_3
     show liza_2 at pos_liza 
     show poli_4 at pos_poli
@@ -37,7 +37,11 @@ label Petrushka:
     show liza_5 at pos_liza
     show poli_5 at pos_poli
     tele "Брінь-дінь-дінь. Брінь-дінь-дінь."
+    show liza_5 at pos_liza_vibration
+
     liza "…"
+    show liza_5 at pos_liza
+    
     tele "Брінь-дінь-дінь. Брінь-дінь-дінь."
     
     poli "Щось не так?"

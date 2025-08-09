@@ -6,8 +6,9 @@ label day2Petr:
     liza "{italic}Сподіваюсь Поліанна прийде…{/italic}"
     liza "{italic}Може мені їй щось подарувати?{/italic}"
 
-    scene ozero_day
+    scene ozero_day with dissolve
     show liza_6 at pos_liza
+    pause 1.5
     show poli_6 at pos_poli
     poli "Ви тільки-но подивіться хто ж це прийшов!"
     poli "Невже це моє сонечко!"
@@ -28,15 +29,15 @@ label day2Petr_2:
     scene ozero_day
     hide liza_7
     show liza_8 at pos_liza
+    show poli_7 at pos_poli
     liza "Так, хочу…"
     show black with fade
-    liza "Тримай себе в руках, не витріщайся на неї… Не витріщайся!"
-    hide black
+    liza "{italic}Тримай себе в руках, не витріщайся на неї… Не витріщайся!{/italic}"
+    hide black 
     show poli_7 at pos_poli
-    show liza_8 at pos_liza
-    poli "І цееее… маленька квіточка! Гарна, правда ж?"
     hide liza_8
     show liza_9 at pos_liza
+    poli "І цееее… маленька квіточка! Гарна, правда ж?"
     liza "Так, дуже гарна..."
     liza "Це всього лиш квітка..."
     pause 1.5
@@ -50,15 +51,14 @@ label day2Petr_2:
     poli "Не брешеш? Наскільки я красивіша за цю квітку?"
     pause 1.5
     liza "Я… я не знаю. На дуже?"
-    poli "Ахахахаха. На дуже!"
-    poli " "
+    poli "Ахахахаха. На дуже?"
     pause 1.0
     poli "Ходи до мене, серденько…"
     hide poli_7 
     show poli_8 at pos_poli
     liza "Навіщо?"
     pause 1.5
-    poli "Невже ти боїшся мене? Нумо, ходи-но сюди"
+    poli "Невже ти боїшся мене? Нумо, ходи-но сюди."
     liza "{italic}Можливо зараз вона…{/italic}"
     scene holds_hands
     poli "Ти вся зашарілася. Мені подобається, яка ти мила."
@@ -75,16 +75,16 @@ label day2Petr_2:
     pause 1.5
     poli "Ахахаха…"
     poli "Моя ти хороша."
-    poli "Що ж, я зовсім не проти, якщо це стане правдою"    
+    poli "Що ж, я зовсім не проти, якщо це стане правдою."    
     scene hand
     pause  1.5
     liza "{italic}Знову цей холод. Я відчуваю як від її дотику поколює шкіру, але… це приємно… Заспокоює…{/italic}"
     liza "{italic}Мене ніби знову сховали від усіх проблем, я більше не почуваюсь самотньою. Поліанна поруч... поруч зі мною…{/italic}"
-    liza "{italic}І ця біль... вона стає дедалі сильнішою...{/italic}"
+    liza "{italic}І цей біль... він стає дедалі сильнішим...{/italic}"
     liza "Ай!"
     scene ozero_day
     show liza_10 at pos_liza
-    show poli_9 at pos_poli
+    show poli_9 at pos_poli_cen_to_right_move
     poli "Вибач, я зробила тобі боляче?"
     liza "Ні-ні, все добре, просто..."
     pause 1.5

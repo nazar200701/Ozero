@@ -1,13 +1,18 @@
 image eheeeee_Dieeeeeee = "eheeeee_Dieeeeeee.png"
 label day1:
-    scene water_night
+    scene ozero_night
+    with dissolve
+
+    pause 1.5
+
     # $ persistent.coll3_unlocked = True
     # play music "1.mp3"
-    show liza_1 at pos_liza
+    
     liza "Яка ж він сволота. В мене вже немає сил терпіти ці знущання…"
-    liza "Знову десь шляється з черговою шльондрою…"
+    show liza_1 at pos_liza
+    liza "Знову десь шляється з черговою шльондрою…" with dissolve
     liza "І цього разу навіть не приховує її! І жодного сорому, жодного… "
-    pause 1.5
+    liza "..."
     liza "А вона?! Як у НЕЇ совісті вистачає гуляти з чужим хлопцем і так його обіймати!"
     pause 1.5
     hide liza_1
@@ -17,12 +22,14 @@ label day1:
     #/Музика: Спокійна/
     #/Звуки: тріск гілок, падіння/
     show liza_3 at pos_liza
-    show poli_1 at pos_poli
 
     poli "Ой блять!"
     liza "..."
+    show poli_1 at pos_poli
+    with dissolve
+    
     poli "*Хмпф* Вельми вдячна за допомогу!"
-    liza "Але x я нічого не зробила..."
+    liza "Але ж я нічого не зробила..."
     poli "А то я не помітила..."
     liza "..."
     hide poli_1
@@ -30,8 +37,9 @@ label day1:
     poli "Ой, бачу на серці смуток? Невже коханий образив?"
     poli "Що ж скоїлось, що ти забігла так далеко від дому?"
     pause 1.5
-    poli "Аж сюди... До мене... На моє озеро"
-    pause 1.5
+
+    poli "{cps=20}Аж сюди... До мене... На моє озеро...{/cps}"
+    
     liza "Я... Пробач мені, я не хотіла тебе турбувати."
     pause 1.5
     hide poli_2
