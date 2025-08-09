@@ -52,7 +52,7 @@ label day1:
     liza "{italic}Не можу рухатись... Чому раптом стало так холодно?.. Це… Це від неї віє холодом, що не дає мені й кроку ступити.{/italic}"
     liza "{italic}Ні… Ні, не підходь до мене! Ні! Ні, будь ласка…{/italic}"
     hide poli_2
-    show poli_3  
+    show poli_3 at pos_poli_centr
     poli "Полин чи петрушка?"
 
     liza "Щ... що?"

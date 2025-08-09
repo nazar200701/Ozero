@@ -3,7 +3,7 @@ label Petrushka:
     #/Музика: Тривожна з переходом в спокійну/
     
     show liza_4 at pos_liza
-    show poli_3 at pos_poli
+    show poli_3 at pos_poli_cen_to_right_move
     
     liza "Гадаю… Петрушка?"
     pause 1.5
@@ -15,7 +15,7 @@ label Petrushka:
     poli "Чого ж ти тоді…"
     hide Liza_4
     hide poli_3
-    show liza_2 at pos_liza
+    show liza_2 at pos_liza 
     show poli_4 at pos_poli
     liza "Я старалася! Старалася з усіх сил!"
     liza "Робила все як він скаже! Поводила себе так, як він хотів."    
@@ -25,7 +25,7 @@ label Petrushka:
     pause 1.5
     liza "Я так втомилась…"
     poli "Ой лишенько… Йди до мене, я тебе обійму, тобі стане краще..."
-    scene hug
+    scene hug  with fade
     liza "{italic}Вона така холодна… Цікаво як довго вона тут...{/italic}"
     pause 1.5
     liza "{italic}З нею так якось… спокійно? Вона неначе сховала мене від зовнішнього світу… Від всіх негараздів та тривожних думок.{/italic}"

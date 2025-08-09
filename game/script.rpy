@@ -11,12 +11,19 @@ transform pos_poli:
     ypos 25
     xalign 0.95
 
-transform pos_poli_centr_move:
+transform pos_poli_rig_to_centr_move:
     zoom 0.3
     ypos 25
     xalign 0.95
     ease 1.0 xalign 0.5
-
-
+transform pos_poli_centr:
+    zoom 0.3
+    ypos 25
+    xalign 0.5
+transform pos_poli_cen_to_right_move:
+    zoom 0.3
+    ypos 25
+    xalign 0.5
+    ease 1.0 xalign 0.95
 label start:
     jump day1

@@ -1,7 +1,7 @@
 label no_water_ending:
     scene water_night
 
-    show liza_1
+    show liza_1 at pos_liza
     liza "Ні... Я не хочу!"
     pause
     liza "Я не піду!"
@@ -19,7 +19,7 @@ label no_water_ending:
 
     # /звук ляпаса/
     # /флеш білий, поступово переходить у прозорість/
-    show liza_14
+    show liza_14 at pos_liza
     liza "Щ-що т-ти..."
 
 
@@ -27,7 +27,7 @@ label no_water_ending:
     liza "Щока горить... Мене наче обпекло холодом. Це відчувається... Як вона."
     liza "Боляче... Я не хочу плакати перед нею..."
 
-    show poli_17
+    show poli_17 at pos_poli
     poli "Ти хочеш мене покинути?! Як всі інші?!"
     # (пауза)
     liza "Я хочу додому... Мені страшно..."
