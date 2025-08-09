@@ -1,5 +1,5 @@
 label preFinal:
-    scene ozero_day
+    scene ozero_night   
     # /Музика: спокійна переходить в напряжну/
     show liza_11 at pos_liza
     show poli_12 at pos_poli
