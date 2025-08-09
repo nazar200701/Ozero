@@ -5,13 +5,13 @@ init python:
     gallery.button("tabletki")
     gallery.image("coll1_tablerki") 
     gallery.condition("persistent.coll1_unlocked")
-    
+
 
     # --- Налаштування Зображення 2 ---
     gallery.button("note")
     gallery.image("coll2_note")
     gallery.condition("persistent.coll2_unlocked")
-    
+
 
     # --- Налаштування Зображення 3 ---
     gallery.button("godinik")
@@ -51,8 +51,8 @@ init python:
 
 screen album():
     tag menu
-    add "game_menu.png"
-    
+    add "gui/game_menu.png"
+
 
     frame:
 
@@ -72,4 +72,4 @@ screen album():
             add gallery.make_button(name="telephon",unlocked = "images/collectibles/small/Illustration106 (6).png",locked="images/collectibles/locked.png")
 
             spacing 15
-        textbutton "Return" action Return()
+        textbutton _("Назад") action Return()

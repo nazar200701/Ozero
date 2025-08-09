@@ -10,4 +10,5 @@ define persitent.vorona4 = False
 define slow_dissolve = Dissolve(3)
 
 label start:
+    stop music
     jump day1
