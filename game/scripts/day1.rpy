@@ -38,7 +38,7 @@ label day1:
     # +
     ## /Персонаж Поліанна наближається до ЛІЗА/
     
-    show poli_2 at pos_poli_centr_move
+    show poli_2 at pos_poli_rig_to_centr_move
 
     poli "Така красива… Така беззахисна."
     pause 1.5

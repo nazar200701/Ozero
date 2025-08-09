@@ -18,12 +18,23 @@ label day2Petr:
     show poli_7 at pos_poli
     liza "{italic}Поліанна… назвала мене своєю? Сонечко? Це приємно, але якось дивно.{/italic}"
     poli "Хочеш я тобі дещо покажу? Але спочатку заплющ очі, не підглядай…"
+    
+    if not persistent.vorona1:
+        "ff"
+        call screen sc_vorona_ozero_day
+        
+    
     liza "Так, хочу…"
     hide liza_7
     show liza_8 at pos_liza
+    
     show black with fade
     liza "Тримай себе в руках, не витріщайся на неї… Не витріщайся!"
     hide black
+    
+    if not persistent.vorona1:
+        $ persistent.vorona1 = True
+        hide voron_ozero_day
     
     poli "І цееее… маленька квіточка! Гарна, правда ж?"
     hide liza_8
@@ -73,6 +84,7 @@ label day2Petr:
     liza "{italic}Мене ніби знову сховали від усіх проблем, я більше не почуваюсь самотньою. Поліанна поруч... поруч зі мною…{/italic}"
     liza "{italic}І ця біль... вона стає дедалі сильнішою...{/italic}"
     liza "Ай!"
+    scene ozero_day
     show liza_10 at pos_liza
     show poli_9 at pos_poli
     poli "Вибач, я зробила тобі боляче?"

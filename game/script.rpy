@@ -1,31 +1,11 @@
 ﻿define liza = Character(_("Ліза"))
 define poli = Character(_("Поліанна"))
-define tele = Character("Телефон")
+define tele = Character(_("Телефон"))
 
-transform pos_liza:
-    zoom 0.3
-    ypos 150
-    xalign 0.05
-
-transform pos_poli:
-    zoom 0.3
-    ypos 25
-    xalign 0.95
-
-transform pos_poli_rig_to_centr_move:
-    zoom 0.3
-    ypos 25
-    xalign 0.95
-    ease 1.0 xalign 0.5
-transform pos_poli_centr:
-    zoom 0.3
-    ypos 25
-    xalign 0.5
-transform pos_poli_cen_to_right_move:
-    zoom 0.3
-    ypos 25
-    xalign 0.5
-    ease 1.0 xalign 0.95
+define persitent.vorona1 = False
+define persitent.vorona2 = False
+define persitent.vorona3 = False
+define persitent.vorona4 = False
 
 define slow_dissolve = Dissolve(3)
 
