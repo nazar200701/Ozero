@@ -18,24 +18,22 @@ label day2Petr:
     show poli_7 at pos_poli
     liza "{italic}Поліанна… назвала мене своєю? Сонечко? Це приємно, але якось дивно.{/italic}"
     poli "Хочеш я тобі дещо покажу? Але спочатку заплющ очі, не підглядай…"
-    
-    if not persistent.vorona1:
-        "ff"
+    if not vorona1:
         call screen sc_vorona_ozero_day
-        
-    
-    liza "Так, хочу…"
+    else:
+        "dddddddd"
+        jump day2Petr_2
+
+label day2Petr_2:
+    scene ozero_day
     hide liza_7
     show liza_8 at pos_liza
-    
+    liza "Так, хочу…"
     show black with fade
     liza "Тримай себе в руках, не витріщайся на неї… Не витріщайся!"
     hide black
-    
-    if not persistent.vorona1:
-        $ persistent.vorona1 = True
-        hide voron_ozero_day
-    
+    show poli_7 at pos_poli
+    show liza_8 at pos_liza
     poli "І цееее… маленька квіточка! Гарна, правда ж?"
     hide liza_8
     show liza_9 at pos_liza
