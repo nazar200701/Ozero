@@ -19,7 +19,7 @@ transform pos_poli_cen_to_right_move:
     zoom 0.3
     ypos 25
     xalign 0.5
-    linear 0.1 xalign 0.95
+    linear 1.0 xalign 0.95
 
 transform pos_liza_vibration:
     zoom 0.3
