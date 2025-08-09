@@ -1,5 +1,6 @@
 label day2Petr:
     scene forest_day
+    play music dialogue_music fadein 1
     # /Музика: Спокійна/
     show liza_6 at pos_liza
 
@@ -11,7 +12,7 @@ label day2Petr:
     pause 1.5
     show poli_6 at pos_poli
 
-    play music dialogue_music fadein 1
+
 
     poli "Ви тільки-но подивіться хто ж це прийшов!"
     poli "Невже це моє сонечко!"
@@ -106,6 +107,7 @@ label day2Petr_2:
     #/Показуємо таймскіп/
     #/Сцена з календарем/
     scene calendar
+    # play music dialogue_music fadein 1
     "13 серпня"
     liza "{italic}Мені здається Поліанна хоче подружитись. Добре до мене ставиться й вислуховує.{/italic}"
     liza "{italic}Ще, розказала мені про свого птаха, що інколи приносить різні речі. Вона сказала, що птах завжди спостерігає за нами. Це трошки дивно, але доволі мило.{/italic}"
