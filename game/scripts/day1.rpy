@@ -1,4 +1,6 @@
 image eheeeee_Dieeeeeee = "eheeeee_Dieeeeeee.png"
+
+
 label day1:
     scene ozero_night
     with dissolve
@@ -6,15 +8,7 @@ label day1:
     play music lake_ambience
 
     pause 1.5
-    $ persistent.coll1_unlocked = False
-    $ persistent.coll2_unlocked = False
-    $ persistent.coll3_unlocked = False
-    $ persistent.coll4_unlocked = False
-    $ persistent.coll5_unlocked = False
-    $ persistent.coll6_unlocked = False
-    $ persistent.coll7_unlocked = False
-    $ persistent.coll8_unlocked = False
-    $ persistent.coll9_unlocked = False
+
     liza "Яка ж він сволота. В мене вже немає сил терпіти ці знущання…"
 
     # play music tense_music fadein 1
@@ -113,8 +107,8 @@ label pazzle1:
     scene ozero_night
     show black transperent
     centered "Пазли в лісі?{nw}"
-    $ grid_width = 2
-    $ grid_height = 1
+    $ grid_width = 8
+    $ grid_height = 5
     $ chosen_img = "puzzle/puzzle1.png"
     call puzzle from _call_puzzle1
     scene ozero_night

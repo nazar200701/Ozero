@@ -58,8 +58,6 @@ label Petrushka_part2:
     stop music fadeout 1
     play sound phone_vibrate
     tele "{cps=0}Брінь-дінь-дінь. Брінь-дінь-дінь.{/cps}"
-    show liza 5 at pos_liza_vibration
-
     liza "…"
     show liza 5 at pos_liza
 

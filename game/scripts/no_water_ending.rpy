@@ -32,7 +32,7 @@ label no_water_ending:
     pause 0.3
 
     # /флеш білий, поступово переходить у прозорість/
-    show liza_14 at pos_liza
+    show liza 14 at pos_liza
     liza "Щ-що т-ти..."
 
     "{italic}Вона мене вдарила?..{/italic}"
