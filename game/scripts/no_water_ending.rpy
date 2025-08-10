@@ -80,9 +80,6 @@ label no_water_ending:
     else:
         jump no_water_ending_2
 label no_water_ending_2:
-    if not persistent.vorona3:
-        hide o_ptashka with dissolve
-        $ persistent.vorona3 = True
     "{italic}Холодно...{/italic}"
     "{italic}Як я не помічала, до чого все йде?..{/italic}"
     "{italic}Поліанна просто маніпулювала мною, щоб... Щоб що?{/italic}"

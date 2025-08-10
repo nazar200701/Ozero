@@ -1,4 +1,4 @@
-define persistent.collectibles_count = 0
+default persistent.collectibles_count = 0
 # 1 працює справно
 
 screen sc_voron_ozero:
@@ -13,8 +13,9 @@ screen sc_voron_ozero:
         action [ToggleScreen("sc_voron_ozero"), Jump("L_sc_voron_ozero")]    
 label L_sc_voron_ozero:
     scene ozero_night
-    $ persistent.collectibles_count =+ 1
+    $ persistent.collectibles_count += 1
     $ persistent.coll9_unlocked = True
+    $ persistent.vorona1 = True 
     show in_coll9
     with dissolve
     "Річ додана до вашого альбому"
@@ -36,7 +37,8 @@ screen sc_vorona_ozero_day:
 label L_vorona_ozero_day:
     scene ozero_day
     $ persistent.coll5_unlocked = True
-    $ persistent.collectibles_count =+ 1
+    $ persistent.collectibles_count += 1
+    $ persistent.vorona2 = True
     show in_coll5
     with dissolve
     "Річ додана до вашого альбому"
@@ -57,8 +59,9 @@ screen sc_o_ptashka:
         action [ToggleScreen("sc_o_ptashka"), Jump("L_sc_o_ptashka")]    
 label L_sc_o_ptashka:
     scene eheeeee_dieeeeeee
-    $ persistent.collectibles_count =+ 1
+    $ persistent.collectibles_count += 1
     $ persistent.coll1_unlocked = True
+    $ persistent.vorona3 = True
     show in_coll1
     with dissolve
     "Річ додана до вашого альбому"
@@ -81,6 +84,9 @@ screen sc_voron_nad_ozerom:
 label L_sc_voron_nad_ozerom:
     scene water_night_silhouettes
     $ persistent.coll7_unlocked = True
+    $ persistent.collectibles_count += 1
+    $ persistent.vorona4 = True
+    hide voron_nad_ozerom
     show in_coll7
     with dissolve
     "Річ додана до вашого альбому"
