@@ -34,9 +34,6 @@ label day2Petr:
         jump day2Petr_2
 
 label day2Petr_2:
-    if not persistent.vorona2:
-        hide voron_ozero_day with dissolve
-        $ persistent.vorona2 = True
     scene ozero_day
     show liza 7 at pos_liza
     show poli 7 at pos_poli
