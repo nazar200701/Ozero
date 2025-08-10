@@ -41,7 +41,7 @@ label no_water_ending:
     hide poli 12
     show poli 17 at pos_poli
     poli "Ти хочеш мене покинути?! Як всі інші?!"
-    # (пауза)
+    "..."
     liza "Я хочу додому... Мені страшно..."
 
     poli "Цього не буде! Ти нікуди не підеш! Не підеш! Не підеш!"
@@ -73,18 +73,22 @@ label no_water_ending:
 
     # /сцена: погляд від обличчя ЛІЗА/
     scene eheeeee_dieeeeeee
-    if not vorona2:
+    if not vorona3:
+        show o_ptashka with dissolve
         call screen sc_o_ptashka
     else:
         "Значить ворона 2 тру"
         jump no_water_ending_2
-label no_water_ending_2:    
+label no_water_ending_2:
+    if not vorona3:
+        hide o_ptashka with dissolve
+        $ vorona3 = True     
     "{italic}Холодно...{/italic}"
     "{italic}Як я не помічала, до чого все йде?..{/italic}"
     "{italic}Поліанна просто маніпулювала мною, щоб... Щоб що?{/italic}"
     "{italic}Хотіла мене вбити?.. Так чому не зробила це одразу? Просто бавилась зі мною?..{/italic}"
     "{italic}Можливо… Можливо вона також просто не хотіла залишитись сама? Її теж покинули… Тепер вона просто мститься?.. Але чому я?..{/italic}"
-    # (пауза)
+    "..."
 
     # /сцена темряви, музика стихає/
     show black

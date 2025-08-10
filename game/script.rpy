@@ -4,8 +4,8 @@ define tele = Character(_("Телефон"))
 
 define vorona1 = False
 define vorona2 = False
-define persitent.vorona3 = False
-define persitent.vorona4 = False
+define vorona3 = False
+define vorona4 = False
 
 define slow_dissolve = Dissolve(3)
 define slow_fade = Fade(1, .5, 1)

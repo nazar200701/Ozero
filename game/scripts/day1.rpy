@@ -50,10 +50,15 @@ label day1:
     liza "..."
     hide poli 1
     show poli 2 at pos_poli
+    $ collectibles_count = 2
+    if collectibles_count == 4:
+        call screen sc_pazzle
+    else:
+        jump day1_2
+label day1_2:
     poli "Ой, бачу на серці смуток? Невже коханий образив?"
     poli "Що ж скоїлось, що ти забігла так далеко від дому?"
     pause 1.5
-
     poli "Аж сюди... "
     extend "До мене... "
     extend "На моє озеро..."
@@ -66,11 +71,7 @@ label day1:
 
     show poli 2 at pos_poli_rig_to_centr_move
     play audio ["<silence .5>", dystort] volume 0.2
-    if not vorona3:
-        call screen sc_vorona_ozero_day
-    else:
-        "Значить ворона 1 тру"
-        jump day2Petr_2
+
 
     poli "Така красива… Така беззахисна."
     pause 1.5
@@ -110,14 +111,15 @@ label day1:
             jump Petrushka
 
 label pazzle1:
-    scene water_day
-    centered "Подивимося що тут...{nw}"
-    $ grid_width = 8
-    $ grid_height = 5
+    scene ozero_night
+    show black transperent
+    centered "Пазли в лісі?{nw}"
+    $ grid_width = 2
+    $ grid_height = 1
     $ chosen_img = "puzzle/puzzle1.png"
     call puzzle from _call_puzzle1
-    scene forest_day
-    jump polyn
+    scene ozero_night
+    jump day1_2
 
 
 

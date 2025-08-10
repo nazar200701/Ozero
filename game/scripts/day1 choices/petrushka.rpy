@@ -11,15 +11,25 @@ label Petrushka:
 
     # play music dialogue_music fadein 1
     play music lake_ambience
-
+    if not vorona1:
+        show voron_ozero with dissolve
+        call screen sc_voron_ozero
+    else:
+        jump day1_part2 
+label Petrushka_part2:
+    if not vorona1:
+        hide voron_ozero with dissolve
+        $ vorona1 = True 
+    show liza 4 at pos_liza
+    show poli 3 at pos_poli
     poli "То що в тебе сталося, серденько? Розповіси мені все, та, можливо, я тобі допоможу."
     liza "Хлопець, якого я, напевно, кохаю, зраджує мені з іншими дівчатами."
     pause 1.5
     liza "Спочатку він це приховував, але тепер, мабуть, зрозумів: я все одно не піду від нього, попри все…"
     pause 1.5
     poli "Чого ж ти тоді…"
-    hide liza 4
-    hide poli 3
+    hide liza
+    hide poli
     show liza 2 at pos_liza
     show poli 4 at pos_poli
     liza "Я старалася! Старалася з усіх сил!"
