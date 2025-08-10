@@ -570,6 +570,14 @@ screen about():
                 text "[gui.about!t]\n"
 
             text _("Зроблено з {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            text _("\nЗвуки взяті з безкоштовного порталу {a=https://pixabay.com/}Pixabay{/a}.\nЛіцензія: {a=https://pixabay.com/service/license-summary/}Pixabay Content License{/a}")
+
+            text _("\n{b}Автори{/b}")
+            text _("Сценарист - Morjogus")
+            text _("Художники - Fir Fi, Káira, Vivi")
+            text _("Програмісти - Невидимий Замок, Крилокіт")
+            text _("Музика - Ілля x_ILM_x")
+            text _("Звуковий дизайн - Крилокіт")
 
 
 style about_label is gui_label
