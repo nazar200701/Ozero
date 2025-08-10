@@ -1,4 +1,6 @@
 label polyn:
+    play music dialogue_music fadein 1 volume 0.5
+
     "Молодець"
     "{b}Вибір \"Полин\" є недопрацьованим{/b}"
     menu:

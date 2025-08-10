@@ -62,7 +62,7 @@ label day1_2:
     liza "Я... Пробач мені, я не хотіла тебе турбувати."
     pause 1.5
     hide poli 2
-    # +
+
     ## /Персонаж Поліанна наближається до ЛІЗА/
 
     show poli 2 at pos_poli_rig_to_centr_move
@@ -91,15 +91,6 @@ label day1_2:
     poli "ПОЛИН чи петрушка?!"
     play music tense_music fadein 1 volume 0.5
 
-#    $ persistent.1_unlocked = True
-#    $ persistent.2_unlocked = True
-#    $ persistent.3_unlocked = True
-#    $ persistent.4_unlocked = True
-#    $ persistent.5_unlocked = True
-#    $ persistent.6_unlocked = True
-#    $ persistent.7_unlocked = True
-#    $ persistent.8_unlocked = True
-#    $ persistent.9_unlocked = True
     menu:
         "Полин":
             jump polyn

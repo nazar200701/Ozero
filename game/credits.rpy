@@ -1,5 +1,5 @@
 label credits:
-    play music dialogue_music fadein 1 volume 0.4
+    play music credits_music fadein 1 volume 0.4
     show credits 1 with dissolve
     "Сценарист - Morjogus"
     show credits 2 with dissolve
