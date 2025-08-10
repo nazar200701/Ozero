@@ -1,5 +1,6 @@
 label polyn:
     "Молодець"
+    "Вибір полин не є допрацьованим"
     menu:
         "Закохуємося, живимо довго":
             jump pol_live_long_life
@@ -7,6 +8,8 @@ label polyn:
             jump pol_liza_want_to_die
         "Вона мені подобається, але...":
             jump pol_fear
+        "Вибрати петрушку":
+            jump Petrushka
 # вибори полину
 label pol_live_long_life:
     "Закохуємося, живимо довго"
