@@ -87,7 +87,7 @@ label day1_2:
     liza "Щ... що?"
     #"(пауза)"
     poli "ПОЛИН чи петрушка?!"
-    play music tense_music fadein 1
+    play music tense_music fadein 1 volume 0.5
 
 #    $ persistent.1_unlocked = True
 #    $ persistent.2_unlocked = True

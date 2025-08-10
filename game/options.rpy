@@ -50,8 +50,8 @@ define config.has_sound = True
 define config.has_music = True
 define config.has_voice = True
 
-define config.default_music_volume = 0.5
-define config.default_sfx_volume = 0.5
+define config.default_music_volume = 0.7
+define config.default_sfx_volume = 0.7
 
 
 ## Щоб дозволити користувачеві відтворювати тестовий звук на звуковому або
@@ -67,7 +67,7 @@ define config.default_sfx_volume = 0.5
 ## відтворюватися у грі, доки його не буде зупинено або не буде відтворено інший
 ## файл.
 
-define config.main_menu_music = "audio/music/menu_music.flac"
+define config.main_menu_music = "audio/music/menu_music.mp3"
 
 
 ## Переходи ####################################################################
