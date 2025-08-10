@@ -47,6 +47,7 @@ label no_water_ending:
     poli "Цього не буде! Ти нікуди не підеш! Не підеш! Не підеш!"
 
     # /сцена: Поліанна хапає дівчинку за волосся/
+    play sound human_impact_on_ground
     scene took_by_the_hair
 
     # /тривожна музика/
