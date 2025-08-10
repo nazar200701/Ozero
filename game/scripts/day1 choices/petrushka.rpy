@@ -15,7 +15,7 @@ label Petrushka:
         show voron_ozero with dissolve
         call screen sc_voron_ozero
     else:
-        jump day1_part2 
+        jump Petrushka_part2
 label Petrushka_part2:
     if not persistent.vorona1:
         hide voron_ozero with dissolve
