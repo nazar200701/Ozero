@@ -3,7 +3,7 @@ define poli = Character(_("Поліанна"))
 define tele = Character(_("Телефон"))
 
 define vorona1 = False
-define persitent.vorona2 = False
+define vorona2 = False
 define persitent.vorona3 = False
 define persitent.vorona4 = False
 

@@ -1,8 +1,8 @@
 label Petrushka:
     scene ozero_night
 
-    show liza_4 at pos_liza
-    show poli_3 at pos_poli_cen_to_right_move
+    show liza 4 at pos_liza
+    show poli 3 at pos_poli_cen_to_right_move
 
     stop music
 
@@ -18,10 +18,10 @@ label Petrushka:
     liza "Спочатку він це приховував, але тепер, мабуть, зрозумів: я все одно не піду від нього, попри все…"
     pause 1.5
     poli "Чого ж ти тоді…"
-    hide liza_4
-    hide poli_3
-    show liza_2 at pos_liza
-    show poli_4 at pos_poli
+    hide liza 4
+    hide poli 3
+    show liza 2 at pos_liza
+    show poli 4 at pos_poli
     liza "Я старалася! Старалася з усіх сил!"
     liza "Робила все як він скаже! Поводила себе так, як він хотів."
     pause 1.5
@@ -42,16 +42,16 @@ label Petrushka:
     poli "Ну, що, стало краще?"
 
     scene ozero_night
-    show liza_5 at pos_liza
-    show poli_5 at pos_poli
+    show liza 5 at pos_liza
+    show poli 5 at pos_poli
 
     stop music fadeout 1
     play sound phone_vibrate
     tele "{cps=0}Брінь-дінь-дінь. Брінь-дінь-дінь.{/cps}"
-    show liza_5 at pos_liza_vibration
+    show liza 5 at pos_liza_vibration
 
     liza "…"
-    show liza_5 at pos_liza
+    show liza 5 at pos_liza
 
     play sound phone_vibrate
     tele "{cps=0}Брінь-дінь-дінь. Брінь-дінь-дінь.{/cps}"

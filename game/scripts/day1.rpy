@@ -6,25 +6,33 @@ label day1:
     play music lake_ambience
 
     pause 1.5
-
+    $ persistent.coll1_unlocked = False
+    $ persistent.coll2_unlocked = False
+    $ persistent.coll3_unlocked = False
+    $ persistent.coll4_unlocked = False
+    $ persistent.coll5_unlocked = False
+    $ persistent.coll6_unlocked = False
+    $ persistent.coll7_unlocked = False
+    $ persistent.coll8_unlocked = False
+    $ persistent.coll9_unlocked = False
     liza "Яка ж він сволота. В мене вже немає сил терпіти ці знущання…"
 
     # play music tense_music fadein 1
 
-    show liza_1 at pos_liza
+    show liza 1 at pos_liza
     liza "Знову десь шляється з черговою шльондрою…" with dissolve
     liza "І цього разу навіть не приховує її! І жодного сорому, жодного… "
     liza "..."
     liza "А вона?! Як у НЕЇ совісті вистачає гуляти з чужим хлопцем і так його обіймати!"
     pause 1.5
-    hide liza_1
-    show liza_2 at pos_liza
-
+    hide liza 
+    show liza 2 at pos_liza
+    
     scene ozero_night
 
     # stop music
 
-    show liza_3 at pos_liza
+    show liza 3 at pos_liza
 
     play sound branch_creak
     poli "Ой блять!"
@@ -33,15 +41,15 @@ label day1:
 
     # play music dialogue_music fadein 1
 
-    show poli_1 at pos_poli
+    show poli 1 at pos_poli
     with dissolve
 
     poli "*Хмпф* Вельми вдячна за допомогу!"
     liza "Але ж я нічого не зробила..."
     poli "А то я не помітила..."
     liza "..."
-    hide poli_1
-    show poli_2 at pos_poli
+    hide poli 1
+    show poli 2 at pos_poli
     poli "Ой, бачу на серці смуток? Невже коханий образив?"
     poli "Що ж скоїлось, що ти забігла так далеко від дому?"
     pause 1.5
@@ -52,12 +60,17 @@ label day1:
 
     liza "Я... Пробач мені, я не хотіла тебе турбувати."
     pause 1.5
-    hide poli_2
+    hide poli 2
     # +
     ## /Персонаж Поліанна наближається до ЛІЗА/
 
-    show poli_2 at pos_poli_rig_to_centr_move
+    show poli 2 at pos_poli_rig_to_centr_move
     play audio ["<silence .5>", dystort] volume 0.2
+    if not vorona3:
+        call screen sc_vorona_ozero_day
+    else:
+        "Значить ворона 1 тру"
+        jump day2Petr_2
 
     poli "Така красива… Така беззахисна."
     pause 1.5
@@ -72,8 +85,8 @@ label day1:
     "{italic}Вона мене лякає.{/italic}"
     "{italic}Не можу рухатись... Чому раптом стало так холодно?.. Це… Це від неї віє холодом, що не дає мені й кроку ступити.{/italic}"
     "{italic}Ні… Ні, не підходь до мене! Ні! Ні, будь ласка…{/italic}"
-    hide poli_2
-    show poli_3 at pos_poli_centr
+    hide poli 2
+    show poli 3 at pos_poli_centr
     poli "Полин чи петрушка?"
 
     liza "Щ... що?"

@@ -6,54 +6,53 @@ label day2Petr:
     # /Музика: Спокійна/
     # play music dialogue_music fadein 1
 
-    show liza_6 at pos_liza
+    show liza 6 at pos_liza
 
     "{italic}Сподіваюсь Поліанна прийде…{/italic}"
     "{italic}Може мені їй щось подарувати?{/italic}"
 
     scene ozero_day with dissolve
-    show liza_6 at pos_liza
+    show liza 6 at pos_liza
     with dissolve
     pause 1.5
-    show poli_6 at pos_poli
+    show poli 6 at pos_poli
     with dissolve
 
     poli "Ви тільки-но подивіться хто ж це прийшов!"
     poli "Невже це моє сонечко!"
     pause 1.0
-    hide liza_6
-    hide poli_6
-    show liza_7 at pos_liza
-    show poli_7 at pos_poli
+    hide liza
+    hide poli
+    show liza 7 at pos_liza
+    show poli 7 at pos_poli
     "{italic}Поліанна… назвала мене своєю? Сонечко? Це приємно, але якось дивно.{/italic}"
     poli "Хочеш я тобі дещо покажу? Але спочатку заплющ очі, не підглядай…"
     if not vorona1:
         call screen sc_vorona_ozero_day
     else:
-        "dddddddd"
+        "Значить ворона 1 тру"
         jump day2Petr_2
 
 label day2Petr_2:
     scene ozero_day
-    hide liza_7
-    show liza_8 at pos_liza
-    show poli_7 at pos_poli
+    show liza 8 at pos_liza
+    show poli 7 at pos_poli
     liza "Так, хочу…"
 
     show black with fade
     "{italic}Тримай себе в руках, не витріщайся на неї… Не витріщайся!{/italic}"
     hide black with fade
 
-    show poli_7 at pos_poli
-    hide liza_8
-    show liza_9 at pos_liza
+    show poli 7 at pos_poli
+    hide liza 8
+    show liza 9 at pos_liza
     poli "І цееее… маленька квіточка! Гарна, правда ж?"
     liza "Так, дуже гарна..."
     liza "Це всього лиш квітка..."
     pause 1.5
     poli "Вона красивіша за мене?"
-    show liza_9
-    show liza_6 at pos_liza
+    show liza 9
+    show liza 6 at pos_liza
     pause 1.5
     liza "Що? В сенсі?"
     poli "Ця квітка красивіша за мене?"
@@ -67,8 +66,8 @@ label day2Petr_2:
     stop music fadeout 1
 
     poli "Ходи до мене, серденько…"
-    hide poli_7
-    show poli_8 at pos_poli
+    hide poli 7
+    show poli 8 at pos_poli
     liza "Навіщо?"
     pause 1.5
     poli "Невже ти боїшся мене? Нумо, ходи-но сюди."
@@ -103,19 +102,19 @@ label day2Petr_2:
 
     scene ozero_day
     play music forest_ambience fadein 1
-    show liza_10 at pos_liza
-    show poli_9 at pos_poli_cen_to_right_move
+    show liza 10 at pos_liza
+    show poli 9 at pos_poli_cen_to_right_move
 
     poli "Вибач, я зробила тобі боляче?"
     liza "Ні-ні, все добре, просто..."
     pause 1.5
     liza "Чи зустрінемось ми знову? Можливо завтра?"
     poli "Так, я чекатиму на тебе тут, сонечко."
-    hide poli_9
-    show poli_10 at pos_poli
+    hide poli 9
+    show poli 10 at pos_poli
     liza "Давай підемо кудись ще? Може погуляємо в місті? Або ж сходимо в парк, якщо ти любиш природу? А давай…."
-    hide poli_10
-    show poli_11 at pos_poli
+    hide poli 10
+    show poli 11 at pos_poli
     poli "Ні, моя хороша, я не можу йти так далеко."
     liza "Ну, добре тоді... Я обов’язково навідаю тебе завтра!"
     stop music

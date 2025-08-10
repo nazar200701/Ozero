@@ -2,13 +2,13 @@ label yes_water_ending:
     scene water_night with dissolve
     # play music tense_music fadein 1
 
-    show liza_15 at pos_liza
+    show liza 15 at pos_liza
     with dissolve
     liza "{italic}Він ніколи мене не покине... Він залишиться зі мною назавжди...{/italic}"
     # (пауза)
     liza "{italic}Страшно...{/italic}"
 
-    show poli_18 at pos_poli
+    show poli 18 at pos_poli
 
     poli "Нумо, сміливіше. Скоро все закінчиться – і ти будеш щаслива."
     poli "Так, йди за мною. Я чекатиму на тебе..."

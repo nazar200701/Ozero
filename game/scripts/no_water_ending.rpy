@@ -1,7 +1,7 @@
 label no_water_ending:
     scene water_night
-    show liza_12 at pos_liza
-    show poli_15 at pos_poli
+    show liza 12 at pos_liza
+    show poli 15 at pos_poli
     with dissolve
 
     # play music tense_music fadein 1
@@ -9,10 +9,10 @@ label no_water_ending:
     liza "Ні... Я не хочу!"
     pause
     liza "Я не піду!"
-    hide liza_12
-    hide poli_15
-    show poli_16 at pos_poli
-    show liza_13 at pos_liza
+    hide liza 12
+    hide poli 15
+    show poli 16 at pos_poli
+    show liza 13 at pos_liza
     poli "Так, ти підеш зі мною!"
     poli "Ти МОЯ подруга! Ти маєш МЕНЕ слухати! Мене, мене... І тільки мене!"
 
@@ -38,8 +38,8 @@ label no_water_ending:
     "{italic}Вона мене вдарила?..{/italic}"
     "{italic}Щока горить... Мене наче обпекло холодом. Це відчувається... Як вона.{/italic}"
     "{italic}Боляче... Я не хочу плакати перед нею...{/italic}"
-    hide poli_12
-    show poli_17 at pos_poli
+    hide poli 12
+    show poli 17 at pos_poli
     poli "Ти хочеш мене покинути?! Як всі інші?!"
     # (пауза)
     liza "Я хочу додому... Мені страшно..."
@@ -73,6 +73,12 @@ label no_water_ending:
 
     # /сцена: погляд від обличчя ЛІЗА/
     scene eheeeee_dieeeeeee
+    if not vorona2:
+        call screen sc_o_ptashka
+    else:
+        "Значить ворона 2 тру"
+        jump no_water_ending_2
+label no_water_ending_2:    
     "{italic}Холодно...{/italic}"
     "{italic}Як я не помічала, до чого все йде?..{/italic}"
     "{italic}Поліанна просто маніпулювала мною, щоб... Щоб що?{/italic}"
