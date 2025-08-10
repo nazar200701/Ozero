@@ -14,13 +14,13 @@ label day2Petr:
     scene ozero_day with dissolve
     show liza 6 at pos_liza
     with dissolve
-    pause 1.5
+    "..."
     show poli 6 at pos_poli
     with dissolve
 
     poli "Ви тільки-но подивіться хто ж це прийшов!"
     poli "Невже це моє сонечко!"
-    pause 1.0
+    "..."
     hide liza
     hide poli
     show liza 7 at pos_liza
@@ -50,16 +50,16 @@ label day2Petr_2:
     poli "І цееее… маленька квіточка! Гарна, правда ж?"
     liza "Так, дуже гарна..."
     liza "Це всього лиш квітка..."
-    pause 1.5
+    "..."
     poli "Вона красивіша за мене?"
     show liza 9
     show liza 6 at pos_liza
-    pause 1.5
+    "..."
     liza "Що? В сенсі?"
     poli "Ця квітка красивіша за мене?"
     liza "Ні-ні, я думаю ти красивіша!"
     poli "Не брешеш? Наскільки я красивіша за цю квітку?"
-    pause 1.5
+    "..."
     liza "Я… я не знаю. На дуже?"
     poli "Ахахахаха. На дуже?"
     pause 1.0
@@ -70,7 +70,7 @@ label day2Petr_2:
     hide poli 7
     show poli 8 at pos_poli
     liza "Навіщо?"
-    pause 1.5
+    "..."
     poli "Невже ти боїшся мене? Нумо, ходи-но сюди."
     "{italic}Можливо зараз вона…{/italic}"
 
@@ -81,20 +81,20 @@ label day2Petr_2:
     "{italic}Щ-що?{/italic}"
     "{italic}Що вона має на увазі?{/italic}"
     "{italic}Я їй подобаюсь?{/italic}"
-    pause 1.5
+    "..."
     liza "Ти мені також…"
-    pause 1.5
+    "..."
     poli "Га?"
     liza "…"
     liza "А, ні, нічого. Я просто…"
     poli "Подумала, що ти мені подобаєшся?"
-    pause 1.5
+    "..."
     poli "Ахахаха…"
     poli "Моя ти хороша."
     poli "Що ж, я зовсім не проти, якщо це стане правдою."
 
     scene hand with dissolve
-    pause 1.5
+    "..."
     "{italic}Знову цей холод. Я відчуваю як від її дотику поколює шкіру, але… це приємно… Заспокоює…{/italic}"
     "{italic}Мене ніби знову сховали від усіх проблем, я більше не почуваюсь самотньою. Поліанна поруч... поруч зі мною…{/italic}"
     "{italic}І цей біль... він стає дедалі сильнішим...{/italic}"
@@ -108,7 +108,7 @@ label day2Petr_2:
 
     poli "Вибач, я зробила тобі боляче?"
     liza "Ні-ні, все добре, просто..."
-    pause 1.5
+    "..."
     liza "Чи зустрінемось ми знову? Можливо завтра?"
     poli "Так, я чекатиму на тебе тут, сонечко."
     hide poli 9
