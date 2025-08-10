@@ -18,6 +18,9 @@ label day1:
     liza "І цього разу навіть не приховує її! І жодного сорому, жодного… "
     "..."
     liza "А вона?! Як у НЕЇ совісті вистачає гуляти з чужим хлопцем і так його обіймати!"
+
+    scene ex with dissolve
+
     pause 1.5
     hide liza
     show liza 2 at pos_liza
