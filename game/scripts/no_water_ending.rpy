@@ -1,8 +1,11 @@
 label no_water_ending:
     scene water_night
-    show poli_15 at pos_poli   
     show liza_12 at pos_liza
-    play music tense_music fadein 1
+    show poli_15 at pos_poli
+    with dissolve
+
+    # play music tense_music fadein 1
+
     liza "Ні... Я не хочу!"
     pause
     liza "Я не піду!"
@@ -21,16 +24,20 @@ label no_water_ending:
     liza "НІ! Ти мені не подруга! Ти лише хочеш..."
 
     # /звук ляпаса/
-    play sound slap
+    show white:
+        alpha 0
+        ease 0 alpha 1
+        ease 0.3 alpha 0
+    play sound slap volume 0.8
+    pause 0.3
 
     # /флеш білий, поступово переходить у прозорість/
     show liza_14 at pos_liza
     liza "Щ-що т-ти..."
 
-
-    liza "{italic}Вона мене вдарила?..{/italic}"
-    liza "{italic}Щока горить... Мене наче обпекло холодом. Це відчувається... Як вона.{/italic}"
-    liza "{italic}Боляче... Я не хочу плакати перед нею...{/italic}"
+    "{italic}Вона мене вдарила?..{/italic}"
+    "{italic}Щока горить... Мене наче обпекло холодом. Це відчувається... Як вона.{/italic}"
+    "{italic}Боляче... Я не хочу плакати перед нею...{/italic}"
     hide poli_12
     show poli_17 at pos_poli
     poli "Ти хочеш мене покинути?! Як всі інші?!"
@@ -54,9 +61,9 @@ label no_water_ending:
     # /Вмикаєм музику на фінал/
     play music final_music fadein 1
 
-    liza "{italic}Що?.. Я не...{/italic}"
+    "{italic}Що?.. Я не...{/italic}"
     # *тут було б гарно таким напівпрозорим показати фрейм, де гравець обирає петрушку*
-    liza "{italic}Петрушка... Це все через це?.. Вона нічого не пояснила — як я могла зрозуміти?..{/italic}"
+    "{italic}Петрушка... Це все через це?.. Вона нічого не пояснила — як я могла зрозуміти?..{/italic}"
 
     play sound water_splash
     scene nooo_helpp
@@ -66,29 +73,30 @@ label no_water_ending:
 
     # /сцена: погляд від обличчя ЛІЗА/
     scene eheeeee_dieeeeeee
-    play music final_music fadein 1
-    liza "{italic}Холодно...{/italic}"
-    liza "{italic}Як я не помічала, до чого все йде?..{/italic}"
-    liza "{italic}Поліанна просто маніпулювала мною, щоб... Щоб що?{/italic}"
-    liza "{italic}Хотіла мене вбити?.. Так чому не зробила це одразу? Просто бавилась зі мною?..{/italic}"
-    liza "{italic}Можливо… Можливо вона також просто не хотіла залишитись сама? Її теж покинули… Тепер вона просто мститься?.. Але чому я?..{/italic}"
+    "{italic}Холодно...{/italic}"
+    "{italic}Як я не помічала, до чого все йде?..{/italic}"
+    "{italic}Поліанна просто маніпулювала мною, щоб... Щоб що?{/italic}"
+    "{italic}Хотіла мене вбити?.. Так чому не зробила це одразу? Просто бавилась зі мною?..{/italic}"
+    "{italic}Можливо… Можливо вона також просто не хотіла залишитись сама? Її теж покинули… Тепер вона просто мститься?.. Але чому я?..{/italic}"
     # (пауза)
 
     # /сцена темряви, музика стихає/
     show black
     with dissolve
-    
 
-    liza "{italic}Вона ж не людина, так?.. Від неї завжди віяло холодом, як від померлої..{/italic}"
-    liza "{italic}Її довге волосся, що просто лежало на воді тепер тягнеться до мене… Воно огортає мої руки, мої ноги...{italic}"
-    liza "{italic}Не можу... рухатись...{/italic}"
-    liza "{italic}Я... не...{/italic}"
+    # Зробити музику тихіше
+    # play music final_music fadein 1 volume 0.5
 
-    poli "{italic}Ти... лиш... м... я... н... за... ди... на... з-вжд...{/italic}"
-    
-    liza "{italic}Я так більше не можу...{/italic}"
-    liza "{italic}Біль...{/italic}"
-    liza "{italic}ше...{/italic}"
+    "{italic}Вона ж не людина, так?.. Від неї завжди віяло холодом, як від померлої..{/italic}"
+    "{italic}Її довге волосся, що просто лежало на воді тепер тягнеться до мене… Воно огортає мої руки, мої ноги...{italic}"
+    "{italic}Не можу... рухатись...{/italic}"
+    "{italic}Я... не...{/italic}"
+
+    poli "Ти... лиш... м... я... н... за... ди... на... з-вжд..."
+
+    "{italic}Я так більше не можу...{/italic}"
+    "{italic}Біль...{/italic}"
+    "{italic}ше...{/italic}"
 
     window auto False
     window hide

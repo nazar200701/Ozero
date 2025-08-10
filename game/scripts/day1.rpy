@@ -3,11 +3,13 @@ label day1:
     scene ozero_night
     with dissolve
 
+    play music lake_ambience
+
     pause 1.5
 
     liza "Яка ж він сволота. В мене вже немає сил терпіти ці знущання…"
 
-    play music tense_music fadein 1
+    # play music tense_music fadein 1
 
     show liza_1 at pos_liza
     liza "Знову десь шляється з черговою шльондрою…" with dissolve
@@ -20,7 +22,7 @@ label day1:
 
     scene ozero_night
 
-    stop music
+    # stop music
 
     show liza_3 at pos_liza
 
@@ -29,7 +31,7 @@ label day1:
     play sound human_impact_on_ground
     liza "..."
 
-    play music dialogue_music fadein 1
+    # play music dialogue_music fadein 1
 
     show poli_1 at pos_poli
     with dissolve
@@ -44,7 +46,9 @@ label day1:
     poli "Що ж скоїлось, що ти забігла так далеко від дому?"
     pause 1.5
 
-    poli "{cps=20}Аж сюди... До мене... На моє озеро...{/cps}"
+    poli "Аж сюди... "
+    extend "До мене... "
+    extend "На моє озеро..."
 
     liza "Я... Пробач мені, я не хотіла тебе турбувати."
     pause 1.5
@@ -53,6 +57,7 @@ label day1:
     ## /Персонаж Поліанна наближається до ЛІЗА/
 
     show poli_2 at pos_poli_rig_to_centr_move
+    play audio ["<silence .5>", dystort] volume 0.2
 
     poli "Така красива… Така беззахисна."
     pause 1.5
@@ -64,9 +69,9 @@ label day1:
 
     stop music fadeout 1
 
-    liza "{italic}Вона мене лякає.{/italic}"
-    liza "{italic}Не можу рухатись... Чому раптом стало так холодно?.. Це… Це від неї віє холодом, що не дає мені й кроку ступити.{/italic}"
-    liza "{italic}Ні… Ні, не підходь до мене! Ні! Ні, будь ласка…{/italic}"
+    "{italic}Вона мене лякає.{/italic}"
+    "{italic}Не можу рухатись... Чому раптом стало так холодно?.. Це… Це від неї віє холодом, що не дає мені й кроку ступити.{/italic}"
+    "{italic}Ні… Ні, не підходь до мене! Ні! Ні, будь ласка…{/italic}"
     hide poli_2
     show poli_3 at pos_poli_centr
     poli "Полин чи петрушка?"

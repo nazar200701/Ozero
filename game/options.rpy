@@ -127,7 +127,7 @@ define config.window_hide_transition = Dissolve(.2)
 ## різкий друк тексту, а будь-яке інше число означатиме кількість символів за
 ## секунду для друку.
 
-default preferences.text_cps = 0
+default preferences.text_cps = 20
 
 
 ## Стандартна затримка автоматичного перемотування. Більші значення призводять
