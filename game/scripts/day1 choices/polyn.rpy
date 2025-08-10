@@ -1,10 +1,10 @@
 label polyn:
     "Молодець"
-    "Вибір полин є не допрацьованим"
+    "{b}Вибір \"Полин\" є недопрацьованим{/b}"
     menu:
-        "Закохуємося, живимо довго":
+        "Закохуємося, живемо довго":
             jump pol_live_long_life
-        "Іду втоплюся...":
+        "Піду втоплюся...":
             jump pol_liza_want_to_die
         "Вона мені подобається, але...":
             jump pol_fear
@@ -16,22 +16,19 @@ label pol_live_long_life:
     return
 label pol_liza_want_to_die:
     "У річці..."
-    "Глибокій.."
+    "Глибокій..."
     "... Буль буль ..."
-    
     return
 # страх
 label pol_fear:
     menu:
-        "i am scared":
-            return
+        "Я налякана":
             jump pol_fear_run
-        "i am brave":
-            return
+        "Я хоробра":
             jump pol_fear_kill
 label pol_fear_run:
-    "ти втікла"
+    "Ти втікла"
     return
 label pol_fear_kill:
-    "ти вбила русалку"
+    "Ти вбила русалку"
     return
