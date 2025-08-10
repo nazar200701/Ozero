@@ -13,7 +13,7 @@ label yes_water_ending:
     poli "Нумо, сміливіше. Скоро все закінчиться – і ти будеш щаслива."
     poli "Так, йди за мною. Я чекатиму на тебе..."
 
-    scene water_night_silhouettes 
+    scene water_night_silhouettes
     with dissolve
 
     "..."
@@ -29,7 +29,7 @@ label yes_water_ending:
     "{italic}Її волосся, що мирно лежало на воді, тепер розпливається в сторони, захоплює більше й більше води, так близько до мене, обвиває своєю прохолодою –  веде мене до неї...{/italic}"
     "{italic}Заспокоює...{/italic}"
     "{italic}Так тихо… Навіть всі птахи, мабуть, вже позасинали. Що я тут роблю...{/italic}"
-    
+
     if not persistent.vorona4:
         show voron_nad_ozerom with dissolve
         call screen sc_voron_nad_ozerom
@@ -59,20 +59,28 @@ label yes_water_ending2:
     liza "Ми..."
 
     # /сцена темряви, музика стихає/
-    show black
+    scene black
     with dissolve
 
     "{italic}Я більше не відчуваю свого тіла.  Волосся Поліанни повністю огорнуло мене. Я знаю, що вона тягне мене так глибоко як може...{/italic}"
     "{italic}Останній раз я відчуваю як крихти страху блищать десь на осередках моєї свідомості і дуже швидко згасають...{/italic}"
-    "..."
-    "{italic}Навічно. Назавжди...{/italic}"
 
     window auto False
     window hide
 
     # /сцена з очима русалки через декілька секунд з прозорості/
-    show eyea
+    scene eyea
     with slow_dissolve
 
-    centered "{size=300}{shader=wave}Кінець{/shader}{/size}"(what_color=gui.accent_color)
-    return
+    pause 2
+
+    "{italic}{cps=10}Навічно. {/cps}{/italic}"
+    extend "{italic}{cps=10}Назавжди...{/cps}{/italic}"
+
+    scene black
+    with slow_dissolve
+    stop music
+
+    pause 3
+
+    jump credits

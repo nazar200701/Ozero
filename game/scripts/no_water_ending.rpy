@@ -81,7 +81,7 @@ label no_water_ending:
 label no_water_ending_2:
     if not persistent.vorona3:
         hide o_ptashka with dissolve
-        $ persistent.vorona3 = True     
+        $ persistent.vorona3 = True
     "{italic}Холодно...{/italic}"
     "{italic}Як я не помічала, до чого все йде?..{/italic}"
     "{italic}Поліанна просто маніпулювала мною, щоб... Щоб що?{/italic}"
@@ -90,8 +90,9 @@ label no_water_ending_2:
     "..."
 
     # /сцена темряви, музика стихає/
-    show black
+    scene black
     with dissolve
+    stop music fadeout 10
 
     # Зробити музику тихіше
     # play music final_music fadein 1 volume 0.5
@@ -110,9 +111,15 @@ label no_water_ending_2:
     window auto False
     window hide
 
-    # /сцена з очима русалки через декілька секунд з прозорості/
-    show eyea
+    scene eyea
     with slow_dissolve
 
-    centered "{size=300}{shader=jitter:u__jitter=5.0, 10.0}Кінець{/shader}{/size}"(what_color=gui.accent_color)
-    return
+    pause 3
+
+    scene black
+    with slow_dissolve
+    stop music
+
+    pause 3
+
+    jump credits
