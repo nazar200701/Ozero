@@ -12,7 +12,7 @@
 ##
 ## _() навколо рядка позначає його як придатний для перекладу.
 
-define config.name = _("Озеро")
+define config.name = _("Під впливом")
 
 
 ## Визначає, чи наведений вище заголовок показано на екрані головного меню.
@@ -151,6 +151,9 @@ default preferences.afm_time = 15
 ## буквальний рядок, а не вираз.
 
 define config.save_directory = "Ozero-1753564136"
+
+define config.has_autosave = True
+define config.autosave_on_choice = True
 
 
 ## Значок ######################################################################
