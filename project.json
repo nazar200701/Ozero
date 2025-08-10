@@ -1,13 +1,14 @@
 {
-    "display_name": "Ozero",
-    "android_build": "Release",
-    "add_from": true,
-    "renamed_all": true,
-    "renamed_steam": true,
-    "force_recompile": true,
-    "build_update": true,
-    "packages": [
-        "pc"
-    ],
-    "type": "hidden"
+  "display_name": "Під впливом",
+  "android_build": "Release",
+  "add_from": true,
+  "renamed_all": true,
+  "renamed_steam": true,
+  "force_recompile": true,
+  "build_update": true,
+  "packages": [
+    "win"
+  ],
+  "type": "hidden",
+  "tutorial": false
 }
