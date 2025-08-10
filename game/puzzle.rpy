@@ -1,6 +1,6 @@
 define grip_size = 75
 define puzzle_field_size = 1100
-define puzzle_field_offset = 60
+define puzzle_field_offset = 150
 define puzzle_piece_size = 450
 define active_area_size = puzzle_piece_size - (grip_size * 2)
 
@@ -136,12 +136,18 @@ label puzzle:
     jump win
 
 label win:
-    show black as puzzle_bg
-    show expression img_to_play as win_img at truecenter with dissolve
-    "Ось і все."
-    hide puzzle_bg
-    hide win_img
-    return
+
+    show puzzle2 with fade
+    "Оуу... "
+    pause 5.0
+    hide black transperent
+    hide puzzle2 with fade
+    scene ozero_night
+    show poli 2 at pos_poli 
+    with dissolve
+    show liza 2 at pos_liza
+    with dissolve
+    jump day1_2
 
 screen control_scr():
     default current_file = 0

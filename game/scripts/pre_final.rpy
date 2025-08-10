@@ -3,9 +3,9 @@ label pre_final:
     play music lake_ambience
     # /Музика: спокійна переходить в напряжну/
     pause 1.5
-    show liza_11 at pos_liza
+    show liza 11 at pos_liza
     with dissolve
-    show poli_12 at pos_poli
+    show poli 12 at pos_poli
     with dissolve
 
     poli "Подивіться-но хто прийшов!"
@@ -14,21 +14,21 @@ label pre_final:
     liza "…"
     liza "Ні, я хочу… Я прийшла, щоб сказати тобі дещо важливе…"
 
-    hide poli_12
-    show poli_13 at pos_poli
+    hide poli 12
+    show poli 13 at pos_poli
     poli "Щось мені це вже не подобається…"
     liza "Дякую, що допомогла мені отямитись тоді. Але я подумала й… Я більше не буду приходити."
     poli "…"
     liza "Це неправильно. Так не має бути…"
     liza "У мене немає бажання приходити сюди. Я не хочу це продовжувати."
 
-    hide poli_13
-    show poli_14 at pos_poli
+    hide poli 13
+    show poli 14 at pos_poli
     poli "Чому? Що тобі не подобається?"
     liza "Не те щоб… я просто…"
 
-    hide poli_14
-    show poli_15 at pos_poli
+    hide poli 14
+    show poli 15 at pos_poli
     poli "Я думала, ми можемо подружитися. Стати ближчими, ніж зараз. Хіба я тобі не подобаюсь?"
     pause 1.5
     poli "Я можу допомогти тобі з твоїм хлопцем…"
@@ -38,8 +38,8 @@ label pre_final:
     liza "Але ж…"
     poli "Тільки ти володітимеш його серцем. Назавжди. Хіба ти цього не хочеш?"
 
-    hide liza_11
-    show liza_12 at pos_liza
+    hide liza 11
+    show liza 12 at pos_liza
     liza "Напевно, хочу…"
     poli "Я знаю ти хочеш!  Тобі треба слухатись мене і тільки мене!"
     poli "Ніхто не зможе допомогти тобі так, як я!"
