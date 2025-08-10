@@ -1,4 +1,4 @@
-define collectibles_count = 0
+define persistent.collectibles_count = 0
 # 1 працює справно
 
 screen sc_voron_ozero:
@@ -13,7 +13,7 @@ screen sc_voron_ozero:
         action [ToggleScreen("sc_voron_ozero"), Jump("L_sc_voron_ozero")]    
 label L_sc_voron_ozero:
     scene ozero_night
-    
+    $ persistent.collectibles_count =+ 1
     $ persistent.coll9_unlocked = True
     show in_coll9
     with dissolve
@@ -36,6 +36,7 @@ screen sc_vorona_ozero_day:
 label L_vorona_ozero_day:
     scene ozero_day
     $ persistent.coll5_unlocked = True
+    $ persistent.collectibles_count =+ 1
     show in_coll5
     with dissolve
     "Річ додана до вашого альбому"
@@ -56,6 +57,7 @@ screen sc_o_ptashka:
         action [ToggleScreen("sc_o_ptashka"), Jump("L_sc_o_ptashka")]    
 label L_sc_o_ptashka:
     scene eheeeee_dieeeeeee
+    $ persistent.collectibles_count =+ 1
     $ persistent.coll1_unlocked = True
     show in_coll1
     with dissolve

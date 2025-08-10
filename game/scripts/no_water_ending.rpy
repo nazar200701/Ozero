@@ -73,16 +73,15 @@ label no_water_ending:
 
     # /сцена: погляд від обличчя ЛІЗА/
     scene eheeeee_dieeeeeee
-    if not vorona3:
+    if not persistent.vorona3:
         show o_ptashka with dissolve
         call screen sc_o_ptashka
     else:
-        "Значить ворона 2 тру"
         jump no_water_ending_2
 label no_water_ending_2:
-    if not vorona3:
+    if not persistent.vorona3:
         hide o_ptashka with dissolve
-        $ vorona3 = True     
+        $ persistent.vorona3 = True     
     "{italic}Холодно...{/italic}"
     "{italic}Як я не помічала, до чого все йде?..{/italic}"
     "{italic}Поліанна просто маніпулювала мною, щоб... Щоб що?{/italic}"

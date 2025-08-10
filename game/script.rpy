@@ -2,10 +2,10 @@
 define poli = Character(_("Поліанна"))
 define tele = Character(_("Телефон"))
 
-define vorona1 = False
-define vorona2 = False
-define vorona3 = False
-define vorona4 = False
+define persistent.vorona1 = False
+define persistent.vorona2 = False
+define persistent.vorona3 = False
+define persistent.vorona4 = False
 
 define slow_dissolve = Dissolve(3)
 define slow_fade = Fade(1, .5, 1)

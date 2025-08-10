@@ -30,13 +30,13 @@ label yes_water_ending:
     "{italic}Заспокоює...{/italic}"
     "{italic}Так тихо… Навіть всі птахи, мабуть, вже позасинали. Що я тут роблю...{/italic}"
     
-    if not vorona4:
+    if not persistent.vorona4:
         show voron_nad_ozerom with dissolve
         call screen sc_voron_nad_ozerom
     else:
         jump yes_water_ending2
 label yes_water_ending2:
-    if not vorona4:
+    if not persistent.vorona4:
         hide voron_nad_ozerom with dissolve
         $ vorona4 = True
     liza "Ти хочеш мене втопити?..."

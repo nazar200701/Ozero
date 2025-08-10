@@ -50,8 +50,7 @@ label day1:
     liza "..."
     hide poli 1
     show poli 2 at pos_poli
-    $ collectibles_count = 2
-    if collectibles_count == 4:
+    if persistent.collectibles_count == 4:
         call screen sc_pazzle
     else:
         jump day1_2

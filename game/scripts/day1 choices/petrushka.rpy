@@ -11,15 +11,15 @@ label Petrushka:
 
     # play music dialogue_music fadein 1
     play music lake_ambience
-    if not vorona1:
+    if not persistent.vorona1:
         show voron_ozero with dissolve
         call screen sc_voron_ozero
     else:
         jump day1_part2 
 label Petrushka_part2:
-    if not vorona1:
+    if not persistent.vorona1:
         hide voron_ozero with dissolve
-        $ vorona1 = True 
+        $ persistent.vorona1 = True 
     show liza 4 at pos_liza
     show poli 3 at pos_poli
     poli "То що в тебе сталося, серденько? Розповіси мені все, та, можливо, я тобі допоможу."

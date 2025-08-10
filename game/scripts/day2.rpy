@@ -27,17 +27,16 @@ label day2Petr:
     show poli 7 at pos_poli
     "{italic}Поліанна… назвала мене своєю? Сонечко? Це приємно, але якось дивно.{/italic}"
     poli "Хочеш я тобі дещо покажу? Але спочатку заплющ очі, не підглядай…"
-    if not vorona2:
+    if not persistent.vorona2:
         show voron_ozero_day with dissolve
         call screen sc_vorona_ozero_day
     else:
-        "Значить ворона 1 тру"
         jump day2Petr_2
 
 label day2Petr_2:
-    if not vorona2:
+    if not persistent.vorona2:
         hide voron_ozero_day with dissolve
-        $ vorona2 = True
+        $ persistent.vorona2 = True
     scene ozero_day
     show liza 7 at pos_liza
     show poli 7 at pos_poli
