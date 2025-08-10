@@ -47,8 +47,14 @@ label day1:
     "..."
     hide poli 1
     show poli 2 at pos_poli
-    if persistent.collectibles_count >= 4:
+    if persistent.collectibles_count >= 4 and persistent.pazzle_was==False:
         call screen sc_pazzle
+    elif(persistent.collectibles_count >= 4 and persistent.pazzle_was==True):
+        menu:
+            "Хочеш ще пазлу?":
+                call screen sc_pazzle
+            "Продовжуємо гру?":
+                jump day1_2
     else:
         jump day1_2
 label day1_2:

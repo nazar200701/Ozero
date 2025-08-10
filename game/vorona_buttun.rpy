@@ -1,4 +1,6 @@
 default persistent.collectibles_count = 0
+default persistent.pazzle_was = False
+
 # 1 працює справно
 
 screen sc_voron_ozero:
@@ -102,6 +104,7 @@ screen sc_pazzle:
         action [ToggleScreen("sc_pazzle"), Jump("prePazzle")]
     timer 5.0 action [ToggleScreen("sc_pazzle"),Jump("day1_2")]
 label prePazzle:
+    $ persistent.pazzle_was = True
     poli "Ой, бачу всі колектібелси у тебе є?"
     poli "На пазл!"
     jump pazzle1
