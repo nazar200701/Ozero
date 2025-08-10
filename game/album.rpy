@@ -72,3 +72,9 @@ screen album():
 
             spacing 15
         textbutton _("Повернутися") action Return()
+        textbutton "Reset" action Jump("reset") xalign 0.95 yalign 0.95
+
+
+label reset:
+    $ persistent._clear()
+    call screen main_menu

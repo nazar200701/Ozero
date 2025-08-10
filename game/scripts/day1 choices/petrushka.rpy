@@ -17,9 +17,7 @@ label Petrushka:
     else:
         jump Petrushka_part2
 label Petrushka_part2:
-    if not persistent.vorona1:
-        hide voron_ozero with dissolve
-        $ persistent.vorona1 = True 
+    hide voron_ozero with dissolve
     show liza 4 at pos_liza
     show poli 3 at pos_poli
     poli "То що в тебе сталося, серденько? Розповіси мені все, та, можливо, я тобі допоможу."
