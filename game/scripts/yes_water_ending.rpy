@@ -1,6 +1,5 @@
 label yes_water_ending:
     scene water_night with dissolve
-    # play music tense_music fadein 1
 
     show liza 15 at pos_liza
     with dissolve
@@ -59,6 +58,7 @@ label yes_water_ending2:
     # /сцена темряви, музика стихає/
     scene black
     with dissolve
+    play music romantic_keys
 
     "{italic}Я більше не відчуваю свого тіла.  Волосся Поліанни повністю огорнуло мене. Я знаю, що вона тягне мене так глибоко як може...{/italic}"
     "{italic}Останній раз я відчуваю як крихти страху блищать десь на осередках моєї свідомості і дуже швидко згасають...{/italic}"

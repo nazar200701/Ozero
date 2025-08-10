@@ -16,12 +16,12 @@ label day1:
     show liza 1 at pos_liza
     liza "Знову десь шляється з черговою шльондрою…" with dissolve
     liza "І цього разу навіть не приховує її! І жодного сорому, жодного… "
-    liza "..."
+    "..."
     liza "А вона?! Як у НЕЇ совісті вистачає гуляти з чужим хлопцем і так його обіймати!"
     pause 1.5
-    hide liza 
+    hide liza
     show liza 2 at pos_liza
-    
+
     scene ozero_night
 
     # stop music
@@ -31,7 +31,7 @@ label day1:
     play sound branch_creak
     poli "Ой блять!"
     play sound human_impact_on_ground
-    liza "..."
+    "..."
 
     # play music dialogue_music fadein 1
 
@@ -41,7 +41,7 @@ label day1:
     poli "*Хмпф* Вельми вдячна за допомогу!"
     liza "Але ж я нічого не зробила..."
     poli "А то я не помітила..."
-    liza "..."
+    "..."
     hide poli 1
     show poli 2 at pos_poli
     if persistent.collectibles_count >= 4:
@@ -70,7 +70,7 @@ label day1_2:
     pause 1.5
     poli "Така сумна… Така стурбована."
 
-    liza "..."
+    "..."
     poli "Не бійся мене, мила дівчинко, я ж не така страшна..."
     poli "Відповіси на моє питання, любонько, та й дізнаємося доленьку твою..."
 
