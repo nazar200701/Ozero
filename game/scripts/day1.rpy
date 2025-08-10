@@ -44,7 +44,6 @@ label day1:
     liza "..."
     hide poli 1
     show poli 2 at pos_poli
-    "[persistent.collectibles_count]"
     if persistent.collectibles_count >= 4:
         call screen sc_pazzle
     else:
