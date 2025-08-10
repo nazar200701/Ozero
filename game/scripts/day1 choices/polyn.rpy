@@ -12,7 +12,7 @@ label polyn:
             jump Petrushka
 # вибори полину
 label pol_live_long_life:
-    "Закохуємося, живимо довго"
+    "І щасливо (?)"
     return
 label pol_liza_want_to_die:
     "У річці..."
