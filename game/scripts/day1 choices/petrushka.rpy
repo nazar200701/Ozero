@@ -11,7 +11,7 @@ label Petrushka:
 
     # play music dialogue_music fadein 1
     play music lake_ambience
-    if not persistent.vorona1:
+    if not persistent.coll9_unlocked:
         show voron_ozero with dissolve
         call screen sc_voron_ozero
     else:

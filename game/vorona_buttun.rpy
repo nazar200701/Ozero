@@ -18,7 +18,6 @@ label L_sc_voron_ozero:
     if persistent.coll9_unlocked != True:
         $ persistent.collectibles_count += 1
     $ persistent.coll9_unlocked = True
-    $ persistent.vorona1 = True 
     show in_coll9
     with dissolve
     "Річ додана до вашого альбому"
@@ -42,7 +41,6 @@ label L_vorona_ozero_day:
     if persistent.coll5_unlocked != True:
         $ persistent.collectibles_count += 1
     $ persistent.coll5_unlocked = True
-    $ persistent.vorona2 = True
     show in_coll5
     with dissolve
     "Річ додана до вашого альбому"
@@ -66,7 +64,6 @@ label L_sc_o_ptashka:
     if persistent.coll1_unlocked != True:
         $ persistent.collectibles_count += 1
     $ persistent.coll1_unlocked = True
-    $ persistent.vorona3 = True
     show in_coll1
     with dissolve
     "Річ додана до вашого альбому"
@@ -91,7 +88,6 @@ label L_sc_voron_nad_ozerom:
     if persistent.coll7_unlocked != True:
         $ persistent.collectibles_count += 1
     $ persistent.coll7_unlocked = True
-    $ persistent.vorona4 = True
     hide voron_nad_ozerom
     show in_coll7
     with dissolve
