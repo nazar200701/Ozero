@@ -11,6 +11,6 @@ label credits:
     show credits 5 with dissolve
     "Звуковий дизайн - Крилокіт"
     show credits 6 with dissolve
-    "Редактура - Сучність Гномика"
+    "Редактура - Сучність Гноміка"
     show credits 7 with dissolve
     "Дякуємо за гру!"

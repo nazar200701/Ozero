@@ -71,8 +71,8 @@ label yes_water_ending2:
     with slow_dissolve
 
     pause 2
-
-    "{italic}{cps=10}Навічно. {/cps}{/italic}"
+    "У голові я чую лише шепіт Поліанни, яка каже:"
+    extend "{italic}{cps=10}Навічно. {/cps}{/italic}"
     extend "{italic}{cps=10}Назавжди...{/cps}{/italic}"
 
     scene black
