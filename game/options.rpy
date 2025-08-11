@@ -37,7 +37,7 @@ define gui.about = _p("""
 ## вбудованому дистрибутиві. Дозволено лише символи ASCII та не повинно містити
 ## пробілів, двокрапок чи крапок з комою.
 
-define build.name = "Ozero"
+define build.name = "PidVplyvom"
 
 
 ## Звуки й музика ##############################################################
@@ -150,7 +150,7 @@ default preferences.afm_time = 15
 ## Як правило, його не слід змінювати, а якщо змінювати, то це завжди має бути
 ## буквальний рядок, а не вираз.
 
-define config.save_directory = "Ozero-1753564136"
+define config.save_directory = "Pid-Vplyvom-1753564136"
 
 define config.has_autosave = True
 define config.autosave_on_choice = True
