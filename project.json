@@ -7,7 +7,7 @@
   "force_recompile": true,
   "build_update": true,
   "packages": [
-    "win"
+    "pc"
   ],
   "type": "hidden",
   "tutorial": false
