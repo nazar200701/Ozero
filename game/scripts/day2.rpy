@@ -27,7 +27,7 @@ label day2Petr:
     show poli 7 at pos_poli
     "{italic}Поліанна… назвала мене своєю? Сонечко? Це приємно, але якось дивно.{/italic}"
     poli "Хочеш я тобі дещо покажу? Але спочатку заплющ очі, не підглядай…"
-    if not persistent.vorona2:
+    if not persistent.coll5_unlocked:
         show voron_ozero_day with dissolve
         call screen sc_vorona_ozero_day
     else:

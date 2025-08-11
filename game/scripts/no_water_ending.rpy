@@ -74,7 +74,7 @@ label no_water_ending:
 
     # /сцена: погляд від обличчя ЛІЗА/
     scene eheeeee_dieeeeeee
-    if not persistent.vorona3:
+    if not persistent.coll1_unlocked:
         show o_ptashka with dissolve
         call screen sc_o_ptashka
     else:
