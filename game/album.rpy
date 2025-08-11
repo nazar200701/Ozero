@@ -72,4 +72,4 @@ screen album():
 
             spacing 15
         textbutton _("Повернутися") action Return() xalign 0.05 yalign 0.95
-        textbutton _("Скинути") action [persistent._clear(), Return()] xalign 0.95 yalign 0.95
+        textbutton _("Скинути") action [lambda: persistent._clear(), Return()] xalign 0.95 yalign 0.95
