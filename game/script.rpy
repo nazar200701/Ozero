@@ -11,7 +11,7 @@ define slow_dissolve = Dissolve(3)
 define slow_fade = Fade(1, .5, 1)
 
 image white = Solid("#ffff")
-
+image disclaimoor = "images/Disclaimoor.png"
 transform flash_white:
     matrixcolor TintMatrix("#FFFFFF")* BrightnessMatrix(0.0)
     linear 0 matrixcolor TintMatrix("#FFFFFF") * BrightnessMatrix(1.0)
