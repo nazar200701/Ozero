@@ -1,9 +1,9 @@
 init python:
 
-    gallery = Gallery() 
+    gallery = Gallery()
     # --- Налаштування Зображення 1 ---
     gallery.button("tabletki")
-    gallery.image("images/collectibles/album/coll1.png") 
+    gallery.image("images/collectibles/album/coll1.png")
     gallery.condition("persistent.coll1_unlocked")
 
 
@@ -72,9 +72,4 @@ screen album():
 
             spacing 15
         textbutton _("Повернутися") action Return() xalign 0.05 yalign 0.95
-        textbutton "Reset" action Jump("reset") xalign 0.95 yalign 0.95
-
-
-label reset:
-    $ persistent._clear()
-    call screen main_menu
+        textbutton _("Скинути") action [persistent._clear(), Return()] xalign 0.95 yalign 0.95

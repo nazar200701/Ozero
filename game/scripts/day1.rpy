@@ -115,5 +115,3 @@ label pazzle1:
     scene ozero_night
     jump day1_2
 
-
-

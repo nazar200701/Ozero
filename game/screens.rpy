@@ -311,9 +311,7 @@ screen navigation():
 
         textbutton _("Налаштування") action ShowMenu("preferences")
 
-        if main_menu:
-
-            textbutton _("Альбом") action ShowMenu("album")
+        textbutton _("Альбом") action ShowMenu("album")
 
         if _in_replay:
 
