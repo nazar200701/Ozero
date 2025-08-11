@@ -35,7 +35,7 @@ label yes_water_ending:
     else:
         jump yes_water_ending2
 label yes_water_ending2:
-
+    hide voron_nad_ozerom with dissolve
     liza "Ти хочеш мене втопити?..."
     "..."
     liza "Це – те рішення проблем, про яке ти казала?.."

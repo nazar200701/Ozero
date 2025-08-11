@@ -45,6 +45,7 @@ label day1:
     liza "Але ж я нічого не зробила..."
     poli "А то я не помітила..."
     "..."
+    #"[persistent.collectibles_count]"
     hide poli 1
     show poli 2 at pos_poli
     if persistent.collectibles_count >= 4 and persistent.pazzle_was==False:

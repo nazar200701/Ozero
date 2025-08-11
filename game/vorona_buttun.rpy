@@ -15,7 +15,7 @@ screen sc_voron_ozero:
         action [ToggleScreen("sc_voron_ozero"), Jump("L_sc_voron_ozero")]    
 label L_sc_voron_ozero:
     scene ozero_night
-    if persistent.coll9_unlocked == False:
+    if persistent.coll9_unlocked != True:
         $ persistent.collectibles_count += 1
     $ persistent.coll9_unlocked = True
     $ persistent.vorona1 = True 
@@ -39,7 +39,7 @@ screen sc_vorona_ozero_day:
         action [ToggleScreen("sc_vorona_ozero_day"), Jump("L_vorona_ozero_day")]
 label L_vorona_ozero_day:
     scene ozero_day
-    if persistent.coll5_unlocked == False:
+    if persistent.coll5_unlocked != True:
         $ persistent.collectibles_count += 1
     $ persistent.coll5_unlocked = True
     $ persistent.vorona2 = True
@@ -63,7 +63,7 @@ screen sc_o_ptashka:
         action [ToggleScreen("sc_o_ptashka"), Jump("L_sc_o_ptashka")]    
 label L_sc_o_ptashka:
     scene eheeeee_dieeeeeee
-    if persistent.coll1_unlocked == False:
+    if persistent.coll1_unlocked != True:
         $ persistent.collectibles_count += 1
     $ persistent.coll1_unlocked = True
     $ persistent.vorona3 = True
@@ -88,9 +88,9 @@ screen sc_voron_nad_ozerom:
         action [ToggleScreen("sc_voron_nad_ozerom"), Jump("L_sc_voron_nad_ozerom")]    
 label L_sc_voron_nad_ozerom:
     scene water_night_silhouettes
-    if persistent.coll7_unlocked == False:
-        $ persistent.coll7_unlocked = True
- 
+    if persistent.coll7_unlocked != True:
+        $ persistent.collectibles_count += 1
+    $ persistent.coll7_unlocked = True
     $ persistent.vorona4 = True
     hide voron_nad_ozerom
     show in_coll7

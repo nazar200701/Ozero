@@ -80,6 +80,8 @@ label no_water_ending:
     else:
         jump no_water_ending_2
 label no_water_ending_2:
+    hide o_ptashka with dissolve
+
     "{italic}Холодно...{/italic}"
     "{italic}Як я не помічала, до чого все йде?..{/italic}"
     "{italic}Поліанна просто маніпулювала мною, щоб... Щоб що?{/italic}"
