@@ -26,3 +26,4 @@
 /strings.json
 
 .vscode/
+#lib/renpy_warp_*
